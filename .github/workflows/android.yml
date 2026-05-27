@@ -12,9 +12,9 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      # Bước 1: Tải mã nguồn từ kho lưu trữ về máy chủ ảo
+      # Bước 1: Tải mã nguồn từ kho lưu trữ về máy chủ ảo (Nâng cấp lên v4)
       - name: Checkout Code
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       # Bước 2: Lấy ngày hiện tại phục vụ cơ chế tạo mã Cache
       - name: Get Date
@@ -23,9 +23,9 @@ jobs:
           echo "date=$(date +'%Y-%m-%d')" >> $GITHUB_OUTPUT
         shell: bash
 
-      # Bước 3: Thiết lập bộ nhớ đệm (Cache) cho Buildozer để tăng tốc độ đóng gói cho các lần sau (chỉ 2-3 phút)
+      # Bước 3: Thiết lập bộ nhớ đệm (Cache) cho Buildozer (Nâng cấp lên v4)
       - name: Cache Buildozer Global Directory
-        uses: actions/cache@v3
+        uses: actions/cache@v4
         with:
           path: ~/.buildozer
           key: ${{ runner.os }}-buildozer-${{ hashFiles('**/buildozer.spec') }}-${{ steps.get-date.outputs.date }}
@@ -45,9 +45,9 @@ jobs:
           workdir: .
           buildozer_version: stable
 
-      # Bước 6: Tải file .APK thành phẩm lên mục Artifacts trên Web GitHub để tải về
+      # Bước 6: Tải file .APK thành phẩm lên mục Artifacts trên Web GitHub (Nâng cấp lên v4)
       - name: Upload APK Artifact
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: EVN-Telemetry-App
           path: bin/*.apk
