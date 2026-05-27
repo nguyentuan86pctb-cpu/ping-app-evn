@@ -7,5 +7,14 @@
         "status": "Offline",
         "latency": "Không phản hồi",
         "last_updated": "22:02:00 27/05/2026"
+    },
+    {
+        "name": "MC34",
+        "router": "Secflow 1v",
+        "ip_device": "10.59.17.23",
+        "ip_sim": "172.16.3.10",
+        "status": "Chưa quét",
+        "latency": "N/A",
+        "last_updated": "23:00:11 27/05/2026"
     }
 ]
