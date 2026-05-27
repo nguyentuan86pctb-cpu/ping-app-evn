@@ -48,7 +48,13 @@ jobs:
       # (Ép sử dụng tiền tố 'python -m buildozer' để chạy hoàn toàn trên môi trường Python 3.10 an toàn)
       - name: Build APK with Buildozer
         run: |
+          # Ẩn tạm thời thư mục header của Host x86_64 để tránh xung đột chéo khi biên dịch Android ARM
+          sudo mv /usr/include/x86_64-linux-gnu /usr/include/x86_64-linux-gnu.bak
+          
           yes y | python -m buildozer -v android debug
+          
+          # Khôi phục lại sau khi hoàn thành
+          sudo mv /usr/include/x86_64-linux-gnu.bak /usr/include/x86_64-linux-gnu
         shell: bash
 
       # Bước 6: Tải file .APK thành phẩm lên mục Artifacts trên Web GitHub để tải về
