@@ -1,0 +1,53 @@
+name: Build Android APK with Buildozer
+
+on:
+  push:
+    branches: [ main, master ]
+  pull_request:
+    branches: [ main, master ]
+  workflow_dispatch: # Cho phép người dùng chủ động nhấn nút chạy build thủ công bất kỳ lúc nào trên web
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      # Bước 1: Tải mã nguồn từ kho lưu trữ về máy chủ ảo
+      - name: Checkout Code
+        uses: actions/checkout@v3
+
+      # Bước 2: Lấy ngày hiện tại phục vụ cơ chế tạo mã Cache
+      - name: Get Date
+        id: get-date
+        run: |
+          echo "date=$(date +'%Y-%m-%d')" >> $GITHUB_OUTPUT
+        shell: bash
+
+      # Bước 3: Thiết lập bộ nhớ đệm (Cache) cho Buildozer để tăng tốc độ đóng gói cho các lần sau (chỉ 2-3 phút)
+      - name: Cache Buildozer Global Directory
+        uses: actions/cache@v3
+        with:
+          path: ~/.buildozer
+          key: ${{ runner.os }}-buildozer-${{ hashFiles('**/buildozer.spec') }}-${{ steps.get-date.outputs.date }}
+          restore-keys: |
+            ${{ runner.os }}-buildozer-
+
+      # Bước 4: Cài đặt toàn bộ các thư viện hệ thống cần thiết (Đặc biệt sửa lỗi libffi bằng libtool-bin và automake)
+      - name: Install System Dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y git zip unzip openjdk-17-jdk-headless autoconf libtool libtool-bin automake pkg-config zlib1g-dev libncurses5-dev libssl-dev cmake libffi-dev gettext
+
+      # Bước 5: Chạy tiến trình đóng gói tự động Buildozer
+      - name: Build with Buildozer Action
+        uses: ArtemSBulgakov/buildozer-action@v1
+        with:
+          workdir: .
+          buildozer_version: stable
+
+      # Bước 6: Tải file .APK thành phẩm lên mục Artifacts trên Web GitHub để tải về
+      - name: Upload APK Artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: EVN-Telemetry-App
+          path: bin/*.apk
