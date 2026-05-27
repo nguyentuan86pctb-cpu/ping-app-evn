@@ -27,10 +27,11 @@ jobs:
         run: |
           sudo apt-get update
           sudo apt-get install -y git zip unzip openjdk-17-jdk-headless autoconf libtool libtool-bin automake pkg-config zlib1g-dev libncurses5-dev libssl-dev cmake libffi-dev gettext libltdl-dev libgmp-dev
-          # Cài đặt bổ sung đầy đủ bộ thư viện phát triển đồ họa SDL2 để Kivy biên dịch thành công 100%
           sudo apt-get install -y libsdl2-dev libsdl2-image-dev libsdl2-mixer-dev libsdl2-ttf-dev
-          pip install --upgrade pip
-          pip install buildozer cython virtualenv sh
+          
+          # Cài đặt pip, Cython và Buildozer vào ĐÚNG môi trường Python 3.10 (Sử dụng tiền tố python -m)
+          python -m pip install --upgrade pip
+          python -m pip install cython virtualenv sh buildozer
 
       # Bước 4: Thiết lập Bộ nhớ đệm (Cache) cho Buildozer để tăng tốc độ cho lần build sau
       - name: Cache Buildozer
@@ -43,10 +44,11 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-buildozer-
 
-      # Bước 5: Thực hiện lệnh đóng gói tự động (Sử dụng 'yes y |' để tự động trả lời YES cho mọi câu hỏi SDK/NDK license)
+      # Bước 5: Thực hiện lệnh đóng gói tự động
+      # (Ép sử dụng tiền tố 'python -m buildozer' để chạy hoàn toàn trên môi trường Python 3.10 an toàn)
       - name: Build APK with Buildozer
         run: |
-          yes y | buildozer -v android debug
+          yes y | python -m buildozer -v android debug
         shell: bash
 
       # Bước 6: Tải file .APK thành phẩm lên mục Artifacts trên Web GitHub để tải về
