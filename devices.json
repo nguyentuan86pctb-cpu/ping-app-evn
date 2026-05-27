@@ -1,0 +1,11 @@
+[
+    {
+        "name": "MC 29",
+        "router": "EW50",
+        "ip_device": "10.59.17.20",
+        "ip_sim": "172.16.0.246",
+        "status": "Offline",
+        "latency": "Không phản hồi",
+        "last_updated": "22:02:00 27/05/2026"
+    }
+]
