@@ -11,7 +11,7 @@
         "status": "Chưa quét",
         "latency": "N/A",
         "services": {},
-        "last_updated": "10:05:57 28/05/2026"
+        "last_updated": "14:45:17 28/05/2026"
     },
     {
         "id": "1779934465873",
@@ -20,12 +20,12 @@
         "router": "EW50-EUS",
         "ip_device": "10.28.0.34/30",
         "ip_sim": "172.16.0.139",
-        "lat": null,
-        "lng": null,
+        "lat": 20.448132954524272,
+        "lng": 106.51385650374333,
         "status": "Chưa quét",
         "latency": "N/A",
         "services": {},
-        "last_updated": "09:14:25 28/05/2026"
+        "last_updated": "14:54:05 28/05/2026"
     },
     {
         "id": "1779934465874",
@@ -39,7 +39,7 @@
         "status": "Chưa quét",
         "latency": "N/A",
         "services": {},
-        "last_updated": "09:14:25 28/05/2026"
+        "last_updated": "14:45:25 28/05/2026"
     },
     {
         "id": "1779934465875",
