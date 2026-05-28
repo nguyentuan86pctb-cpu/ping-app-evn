@@ -1,0 +1,1565 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hệ thống Giám sát Kết nối Đo xa - EVN Central Dashboard (Bản Nâng Cấp)</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Google Fonts (Outfit) -->
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- FontAwesome Icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <!-- Leaflet.js Maps CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.4/dist/leaflet.css" />
+    
+    <style>
+        /* ĐỊNH NGHĨA BIẾN MÀU SẮC CSS CHO CHỦ ĐỀ SÁNG/TỐI */
+        :root {
+            --bg-gradient: linear-gradient(135deg, #0f172a 0%, #1e1b4b 50%, #020617 100%);
+            --glass-bg: rgba(255, 255, 255, 0.03);
+            --glass-border: rgba(255, 255, 255, 0.08);
+            --glass-focus-border: rgba(99, 102, 241, 0.4);
+            --card-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+            
+            --neon-blue: #38bdf8;
+            --neon-green: #4ade80;
+            --neon-red: #f87171;
+            --neon-orange: #fb923c;
+            --text-primary: #f8fafc;
+            --text-secondary: #94a3b8;
+            --navbar-bg: rgba(15, 23, 42, 0.8);
+            --table-header-bg: rgba(15, 23, 42, 0.8);
+            --table-tr-hover: rgba(255, 255, 255, 0.02);
+            --input-bg: rgba(15, 23, 42, 0.6);
+            --modal-bg: rgba(15, 23, 42, 0.95);
+            --table-bg: rgba(15, 23, 42, 0.15);
+            --close-btn-filter: invert(1) grayscale(1) brightness(2);
+        }
+
+        :root[data-theme="light"] {
+            --bg-gradient: linear-gradient(135deg, #f1f5f9 0%, #e2e8f0 50%, #cbd5e1 100%);
+            --glass-bg: rgba(255, 255, 255, 0.65);
+            --glass-border: rgba(0, 0, 0, 0.08);
+            --glass-focus-border: rgba(14, 165, 233, 0.6);
+            --card-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+            
+            --neon-blue: #0284c7;
+            --neon-green: #16a34a;
+            --neon-red: #dc2626;
+            --neon-orange: #ea580c;
+            --text-primary: #0f172a;
+            --text-secondary: #475569;
+            --navbar-bg: rgba(255, 255, 255, 0.85);
+            --table-header-bg: rgba(226, 232, 240, 0.9);
+            --table-tr-hover: rgba(0, 0, 0, 0.02);
+            --input-bg: rgba(255, 255, 255, 0.9);
+            --modal-bg: rgba(255, 255, 255, 0.98);
+            --table-bg: rgba(255, 255, 255, 0.55);
+            --close-btn-filter: none;
+        }
+
+        body {
+            font-family: 'Outfit', sans-serif;
+            background: var(--bg-gradient) !important;
+            color: var(--text-primary) !important;
+            min-height: 100vh;
+            overflow-x: hidden;
+            padding-bottom: 50px;
+            transition: background 0.5s ease, color 0.3s ease;
+        }
+
+        body::before {
+            content: "";
+            position: fixed;
+            top: 0; left: 0; width: 100%; height: 100%;
+            background: radial-gradient(circle at 20% 30%, rgba(99, 102, 241, 0.06) 0%, transparent 40%),
+                        radial-gradient(circle at 80% 70%, rgba(56, 189, 248, 0.06) 0%, transparent 40%);
+            z-index: -1;
+            pointer-events: none;
+        }
+
+        .glass-card {
+            background: var(--glass-bg);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border: 1px solid var(--glass-border);
+            border-radius: 16px;
+            padding: 24px;
+            box-shadow: var(--card-shadow);
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .glass-card:hover {
+            border-color: rgba(99, 102, 241, 0.2);
+            box-shadow: 0 12px 40px 0 rgba(99, 102, 241, 0.1);
+        }
+
+        .stat-card {
+            position: relative;
+            overflow: hidden;
+        }
+        .stat-card::after {
+            content: "";
+            position: absolute;
+            bottom: 0; left: 0; width: 100%; height: 4px;
+        }
+        .stat-total::after { background: var(--neon-blue); }
+        .stat-online::after { background: var(--neon-green); }
+        .stat-offline::after { background: var(--neon-red); }
+        .stat-pending::after { background: var(--neon-orange); }
+
+        .stat-value {
+            font-size: 2.2rem;
+            font-weight: 700;
+            line-height: 1;
+            margin-top: 8px;
+        }
+
+        .form-control, .form-select, .form-control:focus, .form-select:focus {
+            background: var(--input-bg) !important;
+            border: 1px solid var(--glass-border);
+            color: var(--text-primary) !important;
+            border-radius: 8px;
+            padding: 10px 14px;
+            transition: all 0.2s ease;
+        }
+        .form-control:focus, .form-select:focus {
+            border-color: var(--neon-blue);
+            box-shadow: 0 0 0 3px rgba(56, 189, 248, 0.25);
+            outline: none;
+        }
+        .form-label {
+            font-weight: 500;
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+        }
+
+        .btn-glass {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid var(--glass-border);
+            color: var(--text-primary);
+            border-radius: 8px;
+            padding: 10px 20px;
+            font-weight: 500;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            transition: all 0.2s ease;
+        }
+        .btn-glass:hover {
+            background: rgba(255, 255, 255, 0.12);
+            border-color: rgba(255, 255, 255, 0.3);
+            color: var(--text-primary);
+        }
+        .btn-neon-blue {
+            background: rgba(56, 189, 248, 0.12);
+            border: 1px solid var(--neon-blue);
+            color: var(--neon-blue);
+        }
+        .btn-neon-blue:hover {
+            background: var(--neon-blue);
+            color: #fff;
+            box-shadow: 0 0 15px rgba(56, 189, 248, 0.35);
+        }
+        .btn-neon-green {
+            background: rgba(74, 222, 128, 0.12);
+            border: 1px solid var(--neon-green);
+            color: var(--neon-green);
+        }
+        .btn-neon-green:hover {
+            background: var(--neon-green);
+            color: #fff;
+            box-shadow: 0 0 15px rgba(74, 222, 128, 0.35);
+        }
+        .btn-neon-red {
+            background: rgba(248, 113, 113, 0.12);
+            border: 1px solid var(--neon-red);
+            color: var(--neon-red);
+        }
+        .btn-neon-red:hover {
+            background: var(--neon-red);
+            color: #fff;
+            box-shadow: 0 0 15px rgba(248, 113, 113, 0.35);
+        }
+        .btn-neon-orange {
+            background: rgba(251, 146, 60, 0.12);
+            border: 1px solid var(--neon-orange);
+            color: var(--neon-orange);
+        }
+        .btn-neon-orange:hover {
+            background: var(--neon-orange);
+            color: #fff;
+            box-shadow: 0 0 15px rgba(251, 146, 60, 0.35);
+        }
+
+        .table-responsive {
+            border-radius: 12px;
+            border: 1px solid var(--glass-border);
+            background: var(--table-bg) !important;
+        }
+        .table {
+            margin-bottom: 0;
+            color: var(--text-primary) !important;
+            vertical-align: middle;
+        }
+        .table th {
+            background: var(--table-header-bg) !important;
+            color: var(--text-secondary) !important;
+            font-weight: 600;
+            border-bottom: 1px solid var(--glass-border) !important;
+            padding: 14px;
+            font-size: 0.9rem;
+        }
+        .table td {
+            background: transparent !important;
+            border-bottom: 1px solid var(--glass-border) !important;
+            padding: 14px;
+            color: var(--text-primary) !important;
+            font-size: 0.88rem;
+        }
+        .table tbody tr:hover td {
+            background: var(--table-tr-hover) !important;
+        }
+
+        .status-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            padding: 4px 10px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: 500;
+        }
+        .badge-online {
+            background: rgba(74, 222, 128, 0.1);
+            color: var(--neon-green);
+            border: 1px solid rgba(74, 222, 128, 0.2);
+        }
+        .badge-offline {
+            background: rgba(248, 113, 113, 0.1);
+            color: var(--neon-red);
+            border: 1px solid rgba(248, 113, 113, 0.2);
+        }
+        .badge-pending {
+            background: rgba(251, 146, 60, 0.1);
+            color: var(--neon-orange);
+            border: 1px solid rgba(251, 146, 60, 0.2);
+        }
+
+        .port-badge {
+            font-size: 0.72rem;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-weight: 600;
+            margin-right: 3px;
+            display: inline-block;
+        }
+        .port-open {
+            background: rgba(74, 222, 128, 0.15);
+            color: var(--neon-green);
+            border: 1px solid rgba(74, 222, 128, 0.3);
+        }
+        .port-closed {
+            background: rgba(248, 113, 113, 0.1);
+            color: var(--neon-red);
+            border: 1px solid rgba(248, 113, 113, 0.2);
+            opacity: 0.6;
+        }
+
+        .dot-pulse {
+            width: 7px;
+            height: 7px;
+            border-radius: 50%;
+            display: inline-block;
+        }
+        .bg-online {
+            background-color: var(--neon-green);
+            box-shadow: 0 0 0 0 rgba(74, 222, 128, 0.7);
+            animation: pulse-green 2s infinite;
+        }
+        .bg-offline {
+            background-color: var(--neon-red);
+            box-shadow: 0 0 0 0 rgba(248, 113, 113, 0.7);
+            animation: pulse-red 2s infinite;
+        }
+        .bg-pending {
+            background-color: var(--neon-orange);
+        }
+
+        @keyframes pulse-green {
+            0% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(74, 222, 128, 0.5); }
+            70% { transform: scale(1); box-shadow: 0 0 0 6px rgba(74, 222, 128, 0); }
+            100% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(74, 222, 128, 0); }
+        }
+        @keyframes pulse-red {
+            0% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(248, 113, 113, 0.5); }
+            70% { transform: scale(1); box-shadow: 0 0 0 6px rgba(248, 113, 113, 0); }
+            100% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(248, 113, 113, 0); }
+        }
+
+        .brand-header {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin-bottom: 5px;
+        }
+        .brand-logo {
+            width: 45px;
+            height: 45px;
+            background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #fff;
+            box-shadow: 0 4px 15px rgba(245, 158, 11, 0.3);
+        }
+        
+        .theme-switch-wrapper {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .theme-switch {
+            display: inline-block;
+            height: 26px;
+            position: relative;
+            width: 50px;
+        }
+        .theme-switch input {
+            display:none;
+        }
+        .slider {
+            background-color: #475569;
+            bottom: 0;
+            cursor: pointer;
+            left: 0;
+            position: absolute;
+            right: 0;
+            top: 0;
+            transition: .4s;
+            border-radius: 34px;
+        }
+        .slider:before {
+            background-color: #fff;
+            bottom: 4px;
+            content: "";
+            height: 18px;
+            left: 4px;
+            position: absolute;
+            transition: .4s;
+            width: 18px;
+            border-radius: 50%;
+        }
+        input:checked + .slider {
+            background-color: #0284c7;
+        }
+        input:checked + .slider:before {
+            transform: translateX(24px);
+        }
+        
+        .modal-content {
+            background: var(--modal-bg) !important;
+            color: var(--text-primary) !important;
+            border: 1px solid var(--glass-border);
+            border-radius: 16px;
+        }
+
+        .btn-close {
+            filter: var(--close-btn-filter) !important;
+        }
+
+        /* Tùy chỉnh phong cách Bản đồ Leaflet tối màu hợp tông Glassmorphic */
+        #map {
+            border-radius: 16px;
+            border: 1px solid var(--glass-border);
+            overflow: hidden;
+            box-shadow: var(--card-shadow);
+        }
+        
+        /* Bộ chỉnh màu sắc map tối khi dùng dark theme */
+        [data-theme="dark"] #map .leaflet-tile-layer {
+            filter: invert(100%) hue-rotate(180deg) brightness(95%) contrast(90%);
+        }
+
+        .chart-container {
+            position: relative;
+            width: 100%;
+            height: 250px;
+        }
+
+        /* Scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+            height: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: rgba(15, 23, 42, 0.05);
+        }
+        ::-webkit-scrollbar-thumb {
+            background: var(--glass-border);
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: rgba(255, 255, 255, 0.2);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Container Chính -->
+    <div class="container py-4">
+        
+        <!-- TIÊU ĐỀ HỆ THỐNG & SWITCHER -->
+        <header class="d-flex flex-wrap justify-content-between align-items-center mb-4 pb-3 border-bottom border-secondary border-opacity-25">
+            <div class="brand-header">
+                <div class="brand-logo">
+                    <i class="fa-solid fa-tower-broadcast"></i>
+                </div>
+                <div>
+                    <h1 class="h3 m-0 fw-bold tracking-wide">EVN TELEMETRY CENTRAL</h1>
+                    <p class="text-secondary small m-0"><i class="fa-solid fa-circle-nodes me-1"></i> Dashboard Đo Xa Nâng Cấp - Quét Dịch Vụ WAN & Bản Đồ Số</p>
+                </div>
+            </div>
+            <div class="d-flex align-items-center gap-3 mt-3 mt-sm-0 flex-wrap">
+                <!-- Theme Switcher -->
+                <div class="theme-switch-wrapper">
+                    <span class="text-secondary small fw-medium"><i class="fa-solid fa-sun text-warning me-1"></i> Sáng</span>
+                    <label class="theme-switch" for="checkbox-theme">
+                        <input type="checkbox" id="checkbox-theme" />
+                        <div class="slider"></div>
+                    </label>
+                    <span class="text-secondary small fw-medium"><i class="fa-solid fa-moon text-info me-1"></i> Tối</span>
+                </div>
+                
+                <button onclick="openConfigModal()" class="btn-glass btn-neon-blue">
+                    <i class="fa-solid fa-gears"></i> Cấu hình GitHub
+                </button>
+                <button onclick="loadTelemetryData()" class="btn-glass btn-neon-blue">
+                    <i class="fa-solid fa-arrows-rotate"></i> Tải lại dữ liệu
+                </button>
+            </div>
+        </header>
+
+        <!-- KHU VỰC THỐNG KÊ CHỈ SỐ -->
+        <div class="row g-3 mb-4">
+            <div class="col-6 col-md-3">
+                <div class="glass-card stat-card stat-total">
+                    <div class="text-secondary small fw-medium text-uppercase">Tổng thiết bị</div>
+                    <div class="stat-value text-info" id="stat-total-val">0</div>
+                </div>
+            </div>
+            <div class="col-6 col-md-3">
+                <div class="glass-card stat-card stat-online">
+                    <div class="text-secondary small fw-medium text-uppercase">Thiết bị Online</div>
+                    <div class="stat-value text-success" id="stat-online-val">0</div>
+                </div>
+            </div>
+            <div class="col-6 col-md-3">
+                <div class="glass-card stat-card stat-offline">
+                    <div class="text-secondary small fw-medium text-uppercase">Thiết bị Offline</div>
+                    <div class="stat-value text-danger" id="stat-offline-val">0</div>
+                </div>
+            </div>
+            <div class="col-6 col-md-3">
+                <div class="glass-card stat-card stat-pending">
+                    <div class="text-secondary small fw-medium text-uppercase">Chưa Quét Trạng Thái</div>
+                    <div class="stat-value text-warning" id="stat-pending-val">0</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- BẢN ĐỒ SỐ ĐỊA LÝ EVN WAN MAP -->
+        <div class="row mb-4">
+            <div class="col-12">
+                <div class="glass-card p-2">
+                    <div class="d-flex justify-content-between align-items-center px-3 py-2">
+                        <h6 class="fw-bold m-0"><i class="fa-solid fa-map-location-dot text-info me-2"></i>Bản Đồ Số Trạm Đo Xa Điện Lực</h6>
+                        <span class="text-secondary small" id="map-counter">0 trạm có tọa độ</span>
+                    </div>
+                    <div id="map" style="height: 380px;"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- BIỂU ĐỒ PHÂN TÍCH THÔNG MINH -->
+        <div class="row g-3 mb-4">
+            <div class="col-md-4">
+                <div class="glass-card">
+                    <h6 class="fw-bold mb-3"><i class="fa-solid fa-chart-pie text-success me-2"></i>Tỷ Lệ Kết Nối</h6>
+                    <div class="chart-container">
+                        <canvas id="statusChart"></canvas>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="glass-card">
+                    <h6 class="fw-bold mb-3"><i class="fa-solid fa-chart-simple text-info me-2"></i>Thống Kê Router</h6>
+                    <div class="chart-container">
+                        <canvas id="routerChart"></canvas>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="glass-card">
+                    <h6 class="fw-bold mb-3"><i class="fa-solid fa-gauge-high text-warning me-2"></i>Độ Trễ Ping Mạng WAN</h6>
+                    <div class="chart-container">
+                        <canvas id="latencyChart"></canvas>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- THANH CÔNG CỤ TÌM KIẾM THỜI GIAN THỰC & BỘ LỌC NHÓM -->
+        <div class="glass-card mb-4 py-3">
+            <div class="row g-3 align-items-center">
+                <div class="col-md-5">
+                    <div class="input-group">
+                        <span class="input-group-text bg-transparent border-end-0 border-secondary border-opacity-25 text-secondary">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </span>
+                        <input type="text" id="search-input" oninput="filterDevicesTable()" class="form-control border-start-0 border-secondary border-opacity-25" placeholder="Tìm nhanh theo Tên trạm, IP SIM, Router...">
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <select id="group-filter" onchange="filterDevicesTable()" class="form-select border-secondary border-opacity-25">
+                        <option value="Tất cả">Tất cả phân nhóm</option>
+                    </select>
+                </div>
+                <div class="col-md-3 text-md-end">
+                    <button onclick="exportToExcel()" class="btn-glass btn-neon-green w-100 justify-content-center">
+                        <i class="fa-solid fa-file-excel"></i> Xuất Excel Báo Cáo
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- THANH CÔNG CỤ QUẢN TRỊ TRỰC TIẾP TRÊN WEB -->
+        <div class="glass-card mb-4 py-3">
+            <div class="d-flex flex-wrap gap-2 align-items-center justify-content-between">
+                <div class="d-flex flex-wrap gap-2">
+                    <button onclick="openAddDeviceModal()" class="btn btn-glass btn-neon-blue">
+                        <i class="fa-solid fa-plus-circle"></i> Thêm thủ công
+                    </button>
+                    <button onclick="openWebImportModal()" class="btn btn-glass btn-neon-green">
+                        <i class="fa-solid fa-file-import"></i> Nạp từ Excel (Dán)
+                    </button>
+                </div>
+                <button id="btn-sync-to-git" onclick="saveAndSyncToGitHub()" class="btn btn-glass btn-neon-orange">
+                    <i class="fa-solid fa-cloud-arrow-up"></i> Lưu & Đồng bộ lên GitHub
+                </button>
+            </div>
+        </div>
+
+        <!-- BẢNG GIÁM SÁT TRẠNG THÁI HIỆN TRƯỜNG -->
+        <div class="glass-card">
+            <div class="d-flex justify-content-between align-items-center mb-3 flex-wrap gap-2">
+                <div class="d-flex align-items-center gap-3">
+                    <h5 class="fw-bold m-0"><i class="fa-solid fa-desktop text-info me-2"></i>Bảng Giám Sát Trạng Trình Thiết Bị Đo Xa</h5>
+                </div>
+                <span class="text-secondary small text-info" id="last-refreshed">Cập nhật lúc: --:--:--</span>
+            </div>
+            
+            <div class="table-responsive">
+                <table class="table table-hover">
+                    <thead>
+                        <tr>
+                            <th width="50" class="text-center">STT</th>
+                            <th>Tên Thiết Bị / Trạm Đo</th>
+                            <th>Phân Nhóm</th>
+                            <th>Loại Router</th>
+                            <th>IP LAN</th>
+                            <th>IP SIM WAN</th>
+                            <th width="120">Trạng Thái</th>
+                            <th width="100">Độ trễ</th>
+                            <th width="200">Dịch vụ Cổng WAN</th>
+                            <th width="120" class="text-center">Thao tác</th>
+                        </tr>
+                    </thead>
+                    <tbody id="device-table-body">
+                        <tr>
+                            <td colspan="10" class="text-center py-5 text-secondary">
+                                <i class="fa-solid fa-spinner fa-spin fa-2x mb-3 text-info"></i>
+                                <p class="m-0">Vui lòng cấu hình kho chứa GitHub để tải dữ liệu...</p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- CONFIG GITHUB MODAL -->
+    <div class="modal fade" id="configModal" tabindex="-1" aria-labelledby="configModalLabel" aria-hidden="true" style="backdrop-filter: blur(8px);">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header border-bottom border-secondary border-opacity-25">
+                    <h5 class="modal-title fw-bold text-info" id="configModalLabel"><i class="fa-solid fa-gears me-2"></i>Cấu Hình Kho GitHub Dữ Liệu</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <form onsubmit="handleSaveConfig(event)">
+                    <div class="modal-body">
+                        <div class="mb-3">
+                            <label for="cfg-repo" class="form-label">Tên Kho GitHub (Owner/Repo)</label>
+                            <input type="text" class="form-control" id="cfg-repo" placeholder="Ví dụ: nguyentuan86pctb-cpu/ping-app-evn" required autocomplete="off">
+                        </div>
+                        <div class="mb-3">
+                            <label for="cfg-branch" class="form-label">Nhánh Git (Branch)</label>
+                            <input type="text" class="form-control" id="cfg-branch" placeholder="main" required autocomplete="off">
+                        </div>
+                        <div class="mb-3">
+                            <label for="cfg-path" class="form-label">Đường dẫn tệp JSON (Path)</label>
+                            <input type="text" class="form-control" id="cfg-path" placeholder="devices.json" required autocomplete="off">
+                        </div>
+                        <div class="mb-3">
+                            <label for="cfg-token" class="form-label">GitHub Token PAT (Mã hóa an toàn)</label>
+                            <input type="password" class="form-control" id="cfg-token" placeholder="ghp_xxxxxxxxxxxxxxxxxxxxx" autocomplete="off">
+                            <div class="form-text text-secondary small">Token cá nhân giúp trang Web kéo và lưu được dữ liệu CSDL đo xa. Token được bảo mật an toàn.</div>
+                        </div>
+                    </div>
+                    <div class="modal-footer border-top border-secondary border-opacity-25">
+                        <button type="button" class="btn-glass" data-bs-dismiss="modal">Hủy</button>
+                        <button type="submit" class="btn-glass btn-neon-blue">Lưu cấu hình</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- ADD/EDIT DEVICE MODAL -->
+    <div class="modal fade" id="deviceModal" tabindex="-1" aria-labelledby="deviceModalLabel" aria-hidden="true" style="backdrop-filter: blur(8px);">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header border-bottom border-secondary border-opacity-25">
+                    <h5 class="modal-title fw-bold text-info" id="deviceModalLabel"><i class="fa-solid fa-desktop me-2"></i>Thêm Thiết Bị Đo Xa</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <form onsubmit="handleSaveDevice(event)">
+                    <div class="modal-body">
+                        <div class="mb-3">
+                            <label for="dev-name" class="form-label">Tên Thiết Bị / Trạm Đo</label>
+                            <input type="text" class="form-control" id="dev-name" placeholder="Ví dụ: Trạm 110kV Tiến Hải" required autocomplete="off">
+                        </div>
+                        <div class="mb-2">
+                            <label for="dev-group" class="form-label">Phân Nhóm / Điện lực</label>
+                            <input type="text" class="form-control" id="dev-group" placeholder="Ví dụ: Điện lực Tiến Hải" required autocomplete="off">
+                        </div>
+                        <div class="mb-3">
+                            <label for="dev-router" class="form-label">Loại Router</label>
+                            <input type="text" class="form-control" id="dev-router" placeholder="Ví dụ: Robustel R2000" required autocomplete="off">
+                        </div>
+                        <div class="row mb-3">
+                            <div class="col-6">
+                                <label for="dev-ip-device" class="form-label">Địa Chỉ IP LAN Thiết bị</label>
+                                <input type="text" class="form-control" id="dev-ip-device" placeholder="192.168.1.50" required autocomplete="off">
+                            </div>
+                            <div class="col-6">
+                                <label for="dev-ip-sim" class="form-label">Địa Chỉ IP SIM WAN (Quét Ping)</label>
+                                <input type="text" class="form-control" id="dev-ip-sim" placeholder="10.124.32.105" required autocomplete="off">
+                            </div>
+                        </div>
+                        <div class="row mb-2">
+                            <div class="col-6">
+                                <label for="dev-lat" class="form-label">Kinh độ GPS Lat (Tùy chọn)</label>
+                                <input type="text" class="form-control" id="dev-lat" placeholder="Ví dụ: 20.3541" autocomplete="off">
+                            </div>
+                            <div class="col-6">
+                                <label for="dev-lng" class="form-label">Kinh độ GPS Lng (Tùy chọn)</label>
+                                <input type="text" class="form-control" id="dev-lng" placeholder="Ví dụ: 106.5822" autocomplete="off">
+                            </div>
+                        </div>
+                        <div id="dev-error-msg" class="text-danger small" style="display: none;"></div>
+                    </div>
+                    <div class="modal-footer border-top border-secondary border-opacity-25">
+                        <button type="button" class="btn-glass" data-bs-dismiss="modal">Hủy</button>
+                        <button type="submit" class="btn-glass btn-neon-blue">Lưu lại</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- EXCEL IMPORT MODAL -->
+    <div class="modal fade" id="webImportModal" tabindex="-1" aria-labelledby="webImportModalLabel" aria-hidden="true" style="backdrop-filter: blur(8px);">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header border-bottom border-secondary border-opacity-25">
+                    <h5 class="modal-title fw-bold text-success" id="webImportModalLabel"><i class="fa-solid fa-file-import me-2"></i>Nạp Thiết Bị Hàng Loạt Từ Excel</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <form onsubmit="handleImportWebExcel(event)">
+                    <div class="modal-body">
+                        <div class="mb-3">
+                            <label class="form-label">Dán Dữ Liệu Excel (7 Cột: Tên trạm, Nhóm, Router, IP LAN, IP SIM, Lat, Lng):</label>
+                            <textarea class="form-control font-monospace" id="web-import-text" rows="10" placeholder="Trạm A&#9;Điện lực Tiến Hải&#9;Robustel&#9;192.168.1.50&#9;10.124.32.1&#9;20.3541&#9;106.5822&#10;Trạm B&#9;Điện lực Quỳnh Phụ&#9;Teltonika&#9;192.168.1.51&#9;10.124.32.2" required></textarea>
+                            <div class="form-text text-secondary small mt-2">
+                                * Hỗ trợ dán cột từ Excel phân cách bằng phím Tab hoặc dấu phẩy (,).
+                            </div>
+                        </div>
+                        <div id="web-import-status" class="small"></div>
+                    </div>
+                    <div class="modal-footer border-top border-secondary border-opacity-25">
+                        <button type="button" class="btn-glass" data-bs-dismiss="modal">Hủy</button>
+                        <button type="submit" class="btn-glass btn-neon-green">Nạp hàng loạt</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- SCRIPT ĐIỀU KHIỂN & VẼ HÌNH -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Leaflet JS -->
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.4/dist/leaflet.js"></script>
+    <!-- Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    
+    <script>
+        let configModal;
+        let deviceModal;
+        let webImportModal;
+        let globalDevices = [];
+        let editingIndex = -1;
+        
+        let map;
+        let markersGroup;
+        
+        let statusChart;
+        let routerChart;
+        let latencyChart;
+
+        // Mã hóa bảo mật đơn giản cho PAT Token trong LocalStorage
+        function encToken(token) {
+            if (!token) return "";
+            return btoa(token.split("").reverse().join(""));
+        }
+        function decToken(enc) {
+            if (!enc) return "";
+            try {
+                return atob(enc).split("").reverse().join("");
+            } catch(e) {
+                return enc; // fallback nếu token cũ không mã hóa
+            }
+        }
+
+        document.addEventListener("DOMContentLoaded", () => {
+            configModal = new bootstrap.Modal(document.getElementById('configModal'));
+            deviceModal = new bootstrap.Modal(document.getElementById('deviceModal'));
+            webImportModal = new bootstrap.Modal(document.getElementById('webImportModal'));
+            
+            // THIẾT LẬP THEME SWITCHER
+            const themeCheckbox = document.getElementById('checkbox-theme');
+            const currentTheme = localStorage.getItem('theme') ? localStorage.getItem('theme') : 'dark';
+            
+            document.documentElement.setAttribute('data-theme', currentTheme);
+            themeCheckbox.checked = (currentTheme === 'dark');
+
+            themeCheckbox.addEventListener('change', (e) => {
+                const theme = e.target.checked ? 'dark' : 'light';
+                document.documentElement.setAttribute('data-theme', theme);
+                localStorage.setItem('theme', theme);
+                updateChartsTheme();
+            });
+
+            // Khởi tạo Leaflet Map
+            initLeafletMap();
+            
+            // Khởi tạo các biểu đồ trống
+            initCharts();
+
+            // Khởi tạo cấu hình GitHub
+            initGitHubConfig();
+        });
+
+        // Khởi tạo Map địa lý
+        function initLeafletMap() {
+            // Mặc định tâm bản đồ ở Thái Bình/Việt Nam
+            map = L.map('map').setView([20.4501, 106.3402], 11);
+            L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                maxZoom: 19,
+                attribution: '© OpenStreetMap EVN WAN Map'
+            }).addTo(map);
+            
+            markersGroup = L.layerGroup().addTo(map);
+        }
+
+        // Vẽ Markers lên bản đồ số
+        function updateMapMarkers(devices) {
+            markersGroup.clearLayers();
+            let countCoords = 0;
+            let bounds = [];
+
+            devices.forEach(device => {
+                const lat = parseFloat(device.lat);
+                const lng = parseFloat(device.lng);
+                
+                if (!isNaN(lat) && !isNaN(lng)) {
+                    countCoords++;
+                    bounds.push([lat, lng]);
+                    
+                    const status = device.status || 'Chưa quét';
+                    const color = status === 'Online' ? '#4ade80' : status === 'Offline' ? '#f87171' : '#fb923c';
+                    
+                    // Tạo CircleMarker neon đẹp mắt
+                    const marker = L.circleMarker([lat, lng], {
+                        radius: 8,
+                        fillColor: color,
+                        color: '#ffffff',
+                        weight: 1.5,
+                        opacity: 1,
+                        fillOpacity: 0.95
+                    });
+
+                    // Chi tiết các cổng dịch vụ
+                    let pDetails = "";
+                    if (device.services) {
+                        const ports = [80, 443, 502, 104];
+                        ports.forEach(p => {
+                            const pState = device.services[p.toString()]?.status || 'closed';
+                            const pIcon = pState === 'open' ? '🟢' : '🔴';
+                            pDetails += `<br/><b>Cổng ${p}:</b> ${pIcon} ${pState.toUpperCase()}`;
+                        });
+                    }
+
+                    const popupContent = `
+                        <div style="font-family: 'Outfit', sans-serif; font-size: 13px;">
+                            <strong style="color: #0284c7; font-size: 14px;">${escapeHTML(device.name)}</strong><br/>
+                            <b>Nhóm:</b> ${escapeHTML(device.group || 'Chưa phân nhóm')}<br/>
+                            <b>Router:</b> ${escapeHTML(device.router)}<br/>
+                            <b>IP SIM WAN:</b> <code>${device.ip_sim}</code><br/>
+                            <b>Trạng Thái:</b> <span style="color:${color}; font-weight:bold;">${status}</span><br/>
+                            <b>Độ trễ Ping:</b> ${device.latency || 'N/A'}${pDetails}
+                        </div>
+                    `;
+                    marker.bindPopup(popupContent);
+                    markersGroup.addLayer(marker);
+                }
+            });
+
+            document.getElementById('map-counter').innerText = `${countCoords} trạm có tọa độ GPS`;
+            
+            if (bounds.length > 0) {
+                map.fitBounds(bounds, { padding: [30, 30] });
+            }
+        }
+
+        // Khởi tạo các biểu đồ Chart.js
+        function initCharts() {
+            const chartOptions = {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: {
+                    legend: {
+                        labels: { color: '#94a3b8', font: { family: 'Outfit', size: 11 } }
+                    }
+                }
+            };
+
+            // 1. Biểu đồ tròn Trạng thái kết nối
+            const ctxStatus = document.getElementById('statusChart').getContext('2d');
+            statusChart = new Chart(ctxStatus, {
+                type: 'doughnut',
+                data: {
+                    labels: ['Online', 'Offline', 'Chưa quét'],
+                    datasets: [{
+                        data: [0, 0, 0],
+                        backgroundColor: ['#4ade80', '#f87171', '#fb923c'],
+                        borderWidth: 0
+                    }]
+                },
+                options: chartOptions
+            });
+
+            // 2. Biểu đồ cột Router
+            const ctxRouter = document.getElementById('routerChart').getContext('2d');
+            routerChart = new Chart(ctxRouter, {
+                type: 'bar',
+                data: {
+                    labels: [],
+                    datasets: [{
+                        label: 'Số lượng Router',
+                        data: [],
+                        backgroundColor: '#38bdf8',
+                        borderRadius: 4
+                    }]
+                },
+                options: {
+                    ...chartOptions,
+                    scales: {
+                        x: { grid: { display: false }, ticks: { color: '#94a3b8' } },
+                        y: { grid: { color: 'rgba(255,255,255,0.05)' }, ticks: { color: '#94a3b8', stepSize: 1 } }
+                    }
+                }
+            });
+
+            // 3. Biểu đồ cột Độ trễ
+            const ctxLatency = document.getElementById('latencyChart').getContext('2d');
+            latencyChart = new Chart(ctxLatency, {
+                type: 'bar',
+                data: {
+                    labels: ['Nhanh (<50ms)', 'Vừa (50-200ms)', 'Chậm (>200ms)', 'Không phản hồi'],
+                    datasets: [{
+                        label: 'Số trạm',
+                        data: [0, 0, 0, 0],
+                        backgroundColor: ['#4ade80', '#38bdf8', '#fb923c', '#f87171'],
+                        borderRadius: 4
+                    }]
+                },
+                options: {
+                    ...chartOptions,
+                    scales: {
+                        x: { grid: { display: false }, ticks: { color: '#94a3b8' } },
+                        y: { grid: { color: 'rgba(255,255,255,0.05)' }, ticks: { color: '#94a3b8', stepSize: 1 } }
+                    }
+                }
+            });
+        }
+
+        // Cập nhật dữ liệu biểu đồ phân tích
+        function updateChartsData(devices) {
+            // 1. Thống kê kết nối
+            const online = devices.filter(d => d.status === 'Online').length;
+            const offline = devices.filter(d => d.status === 'Offline').length;
+            const pending = devices.length - online - offline;
+            
+            statusChart.data.datasets[0].data = [online, offline, pending];
+            statusChart.update();
+
+            // 2. Thống kê Router
+            const routers = {};
+            devices.forEach(d => {
+                const name = d.router || 'N/A';
+                routers[name] = (routers[name] || 0) + 1;
+            });
+            routerChart.data.labels = Object.keys(routers);
+            routerChart.data.datasets[0].data = Object.values(routers);
+            routerChart.update();
+
+            // 3. Thống kê độ trễ
+            let fast = 0, medium = 0, slow = 0, unreachable = 0;
+            devices.forEach(d => {
+                if (d.status === 'Offline') {
+                    unreachable++;
+                } else if (d.status === 'Online') {
+                    const ms = parseInt(d.latency);
+                    if (isNaN(ms)) {
+                        fast++;
+                    } else if (ms < 50) {
+                        fast++;
+                    } else if (ms <= 200) {
+                        medium++;
+                    } else {
+                        slow++;
+                    }
+                } else {
+                    unreachable++;
+                }
+            });
+            latencyChart.data.datasets[0].data = [fast, medium, slow, unreachable];
+            latencyChart.update();
+        }
+
+        function updateChartsTheme() {
+            const isDark = document.documentElement.getAttribute('data-theme') === 'dark';
+            const tickColor = isDark ? '#94a3b8' : '#475569';
+            
+            [routerChart, latencyChart].forEach(chart => {
+                chart.options.scales.x.ticks.color = tickColor;
+                chart.options.scales.y.ticks.color = tickColor;
+                chart.options.plugins.legend.labels.color = tickColor;
+                chart.update();
+            });
+            statusChart.options.plugins.legend.labels.color = tickColor;
+            statusChart.update();
+        }
+
+        // Đọc cấu hình từ LocalStorage
+        function initGitHubConfig() {
+            const repo = localStorage.getItem('git_repo');
+            if (repo) {
+                loadTelemetryData();
+                setInterval(loadTelemetryData, 30000); // Tự động làm mới mỗi 30s
+            } else {
+                setTimeout(() => configModal.show(), 500);
+            }
+        }
+
+        function openConfigModal() {
+            document.getElementById('cfg-repo').value = localStorage.getItem('git_repo') || '';
+            document.getElementById('cfg-branch').value = localStorage.getItem('git_branch') || 'main';
+            document.getElementById('cfg-path').value = localStorage.getItem('git_path') || 'devices.json';
+            document.getElementById('cfg-token').value = decToken(localStorage.getItem('git_token_enc')) || '';
+            configModal.show();
+        }
+
+        function handleSaveConfig(event) {
+            event.preventDefault();
+            const repo = document.getElementById('cfg-repo').value.trim();
+            const branch = document.getElementById('cfg-branch').value.trim() || 'main';
+            const path = document.getElementById('cfg-path').value.trim() || 'devices.json';
+            const token = document.getElementById('cfg-token').value.trim();
+
+            localStorage.setItem('git_repo', repo);
+            localStorage.setItem('git_branch', branch);
+            localStorage.setItem('git_path', path);
+            localStorage.setItem('git_token_enc', encToken(token));
+
+            configModal.hide();
+            loadTelemetryData();
+        }
+
+        // TẢI FILE CƠ SỞ DỮ LIỆU TỪ GITHUB
+        async function loadTelemetryData() {
+            const repo = localStorage.getItem('git_repo');
+            const branch = localStorage.getItem('git_branch') || 'main';
+            const path = localStorage.getItem('git_path') || 'devices.json';
+            const token = decToken(localStorage.getItem('git_token_enc')) || '';
+
+            if (!repo) return;
+
+            const tbody = document.getElementById('device-table-body');
+            tbody.innerHTML = `
+                <tr>
+                    <td colspan="10" class="text-center py-5 text-secondary">
+                        <i class="fa-solid fa-spinner fa-spin fa-2x mb-3 text-info"></i>
+                        <p class="m-0">Đang tải tệp dữ liệu đo xa nâng cấp từ GitHub (${escapeHTML(repo)})...</p>
+                    </td>
+                </tr>
+            `;
+
+            const cacheBuster = `t=${new Date().getTime()}`;
+            let url = `https://api.github.com/repos/${repo}/contents/${path}?ref=${branch}&${cacheBuster}`;
+            let headers = {
+                "Accept": "application/vnd.github.v3.raw"
+            };
+            if (token) {
+                headers["Authorization"] = `token ${token}`;
+            }
+
+            try {
+                // Tải thô
+                const response = await fetch(url, { headers: headers });
+                
+                if (response.ok) {
+                    const text = await response.text();
+                    globalDevices = JSON.parse(text);
+                    
+                    // Render UI
+                    renderGroupsDropdown(globalDevices);
+                    renderTable(globalDevices);
+                    renderStats(globalDevices);
+                    updateChartsData(globalDevices);
+                    updateMapMarkers(globalDevices);
+                    
+                    const now = new Date();
+                    document.getElementById('last-refreshed').innerHTML = `<i class="fa-solid fa-circle-check text-success"></i> Đồng bộ: ${now.toLocaleTimeString('vi-VN')}`;
+                } else {
+                    // Nếu lỗi và không dùng token, thử kéo raw qua RawGithub (kho Public)
+                    if (!token) {
+                        const rawUrl = `https://raw.githubusercontent.com/${repo}/${branch}/${path}?${cacheBuster}`;
+                        const rawResponse = await fetch(rawUrl);
+                        if (rawResponse.ok) {
+                            globalDevices = await rawResponse.json();
+                            renderGroupsDropdown(globalDevices);
+                            renderTable(globalDevices);
+                            renderStats(globalDevices);
+                            updateChartsData(globalDevices);
+                            updateMapMarkers(globalDevices);
+                            
+                            const now = new Date();
+                            document.getElementById('last-refreshed').innerHTML = `<i class="fa-solid fa-circle-check text-success"></i> Đồng bộ Raw: ${now.toLocaleTimeString('vi-VN')}`;
+                            return;
+                        }
+                    }
+                    tbody.innerHTML = `
+                        <tr>
+                            <td colspan="10" class="text-center py-5 text-danger">
+                                <i class="fa-solid fa-circle-exclamation fa-2x mb-3"></i>
+                                <p class="m-0">Lỗi đọc tệp! Mã lỗi: ${response.status}. Kiểm tra lại tên kho và Token PAT.</p>
+                            </td>
+                        </tr>
+                    `;
+                }
+            } catch (err) {
+                tbody.innerHTML = `
+                    <tr>
+                        <td colspan="10" class="text-center py-5 text-danger">
+                            <i class="fa-solid fa-wifi fa-2x mb-3"></i>
+                            <p class="m-0">Lỗi kết nối mạng: ${err.message}. Đảm bảo máy tính có kết nối Internet.</p>
+                        </td>
+                    </tr>
+                `;
+            }
+        }
+
+        // Cập nhật danh sách Nhóm trong Dropdown filter
+        function renderGroupsDropdown(devices) {
+            const groups = new Set();
+            devices.forEach(d => {
+                if (d.group) groups.add(d.group.trim());
+            });
+
+            const filterSelect = document.getElementById('group-filter');
+            const currentSelected = filterSelect.value;
+            
+            filterSelect.innerHTML = `<option value="Tất cả">Tất cả phân nhóm</option>`;
+            
+            Array.from(groups).sort().forEach(g => {
+                const opt = document.createElement('option');
+                opt.value = g;
+                opt.innerText = g;
+                filterSelect.appendChild(opt);
+            });
+
+            filterSelect.value = currentSelected;
+        }
+
+        // DỰNG BẢNG THIẾT BỊ ĐO XA
+        function renderTable(devices) {
+            const tbody = document.getElementById('device-table-body');
+            tbody.innerHTML = '';
+            
+            if (devices.length === 0) {
+                tbody.innerHTML = `
+                    <tr>
+                        <td colspan="10" class="text-center py-5 text-secondary">
+                            <i class="fa-solid fa-folder-open fa-2x mb-3"></i>
+                            <p class="m-0">Tệp dữ liệu trống! Hãy nạp danh sách thiết bị.</p>
+                        </td>
+                    </tr>
+                `;
+                return;
+            }
+            
+            devices.forEach((device, index) => {
+                let statusBadge = '';
+                const status = device.status || 'Chưa quét';
+                const latency = device.latency || 'N/A';
+                const group = device.group || 'Chưa phân nhóm';
+
+                if (status === 'Online') {
+                    statusBadge = `<span class="status-badge badge-online"><span class="dot-pulse bg-online"></span>Online</span>`;
+                } else if (status === 'Offline') {
+                    statusBadge = `<span class="status-badge badge-offline"><span class="dot-pulse bg-offline"></span>Offline</span>`;
+                } else {
+                    statusBadge = `<span class="status-badge badge-pending"><span class="dot-pulse bg-pending"></span>Chưa quét</span>`;
+                }
+                
+                let latencyDisplay = latency;
+                if (status === 'Online') {
+                    latencyDisplay = `<b class="text-success"><i class="fa-solid fa-gauge-high"></i> ${latency}</b>`;
+                } else if (status === 'Offline') {
+                    latencyDisplay = `<span class="text-danger"><i class="fa-solid fa-circle-xmark"></i> ${latency}</span>`;
+                } else {
+                    latencyDisplay = `<span class="text-secondary">-</span>`;
+                }
+
+                // Vẽ badge trạng thái các cổng
+                let serviceBadges = '';
+                const ports = [80, 443, 502, 104];
+                if (device.services && Object.keys(device.services).length > 0) {
+                    ports.forEach(p => {
+                        const state = device.services[p.toString()]?.status || 'closed';
+                        const badgeClass = state === 'open' ? 'port-open' : 'port-closed';
+                        const symbol = state === 'open' ? '✔' : '✘';
+                        serviceBadges += `<span class="port-badge ${badgeClass}">${p}:${symbol}</span>`;
+                    });
+                } else {
+                    serviceBadges = `<span class="text-secondary small">Chưa quét dịch vụ</span>`;
+                }
+                
+                const globalIndex = globalDevices.findIndex(d => d.ip_sim === device.ip_sim);
+                
+                const row = document.createElement('tr');
+                row.innerHTML = `
+                    <td class="text-center text-secondary fw-medium">${index + 1}</td>
+                    <td><strong>${escapeHTML(device.name)}</strong></td>
+                    <td><span class="badge bg-secondary bg-opacity-25 text-secondary px-2 py-1">${escapeHTML(group)}</span></td>
+                    <td><span class="text-secondary fw-medium">${escapeHTML(device.router)}</span></td>
+                    <td><code class="text-secondary font-monospace">${escapeHTML(device.ip_device)}</code></td>
+                    <td><code class="text-info font-monospace">${escapeHTML(device.ip_sim)}</code></td>
+                    <td>${statusBadge}</td>
+                    <td>${latencyDisplay}</td>
+                    <td>${serviceBadges}</td>
+                    <td class="text-center">
+                        <button onclick="openEditDeviceModal(${globalIndex >= 0 ? globalIndex : index})" class="btn btn-sm btn-outline-info me-1 py-1 px-2"><i class="fa-solid fa-pen-to-square"></i></button>
+                        <button onclick="deleteDevice(${globalIndex >= 0 ? globalIndex : index})" class="btn btn-sm btn-outline-danger py-1 px-2"><i class="fa-solid fa-trash-can"></i></button>
+                    </td>
+                `;
+                tbody.appendChild(row);
+            });
+        }
+
+        function renderStats(devices) {
+            const total = devices.length;
+            const online = devices.filter(d => d.status === 'Online').length;
+            const offline = devices.filter(d => d.status === 'Offline').length;
+            const pending = total - online - offline;
+
+            document.getElementById('stat-total-val').innerText = total;
+            document.getElementById('stat-online-val').innerText = online;
+            document.getElementById('stat-offline-val').innerText = offline;
+            document.getElementById('stat-pending-val').innerText = pending;
+        }
+
+        // LỌC DỮ LIỆU
+        function filterDevicesTable() {
+            const query = document.getElementById('search-input').value.trim().toLowerCase();
+            const groupFilter = document.getElementById('group-filter').value;
+            
+            let filtered = globalDevices;
+
+            if (groupFilter !== 'Tất cả') {
+                filtered = filtered.filter(d => (d.group || 'Chưa phân nhóm') === groupFilter);
+            }
+
+            if (query) {
+                filtered = filtered.filter(d => {
+                    return (d.name || '').toLowerCase().includes(query) ||
+                           (d.router || '').toLowerCase().includes(query) ||
+                           (d.ip_device || '').includes(query) ||
+                           (d.ip_sim || '').includes(query);
+                });
+            }
+
+            renderTable(filtered);
+            updateMapMarkers(filtered);
+        }
+
+        // XUẤT EXCEL CHỐNG LỖI VIỆT HÓA (11 CỘT)
+        function exportToExcel() {
+            if (globalDevices.length === 0) {
+                alert("Không có dữ liệu thiết bị nào để xuất báo cáo!");
+                return;
+            }
+            
+            let csvContent = "";
+            const headers = ["STT", "Ten Thiet Bi", "Nhom Tram", "Loai Router", "IP LAN", "IP SIM WAN", "Trang Thai", "Do Tre", "Cổng 80", "Cổng 443", "Cổng 502", "Cổng 104", "Cap Nhat Cuoi"];
+            csvContent += headers.join(",") + "\n";
+            
+            globalDevices.forEach((d, index) => {
+                const row = [
+                    index + 1,
+                    `"${(d.name || '').replace(/"/g, '""')}"`,
+                    `"${(d.group || 'Chưa phân nhóm').replace(/"/g, '""')}"`,
+                    `"${(d.router || '').replace(/"/g, '""')}"`,
+                    d.ip_device || '',
+                    d.ip_sim || '',
+                    d.status || 'Chưa quét',
+                    d.latency || 'N/A',
+                    d.services?.["80"]?.status || 'closed',
+                    d.services?.["443"]?.status || 'closed',
+                    d.services?.["502"]?.status || 'closed',
+                    d.services?.["104"]?.status || 'closed',
+                    `"${d.last_updated || 'N/A'}"`
+                ];
+                csvContent += row.join(",") + "\n";
+            });
+            
+            const universalBOM = "\uFEFF";
+            const blob = new Blob([universalBOM + csvContent], { type: "text/csv;charset=utf-8;" });
+            const url = URL.createObjectURL(blob);
+            
+            const link = document.createElement("a");
+            const timestamp = new Date().toISOString().slice(0,10);
+            link.setAttribute("href", url);
+            link.setAttribute("download", `EVN_Telemetry_NangCap_BaoCao_${timestamp}.csv`);
+            link.style.visibility = 'hidden';
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+        }
+
+        function escapeHTML(str) {
+            return (str || '').replace(/[&<>'"]/g, 
+                tag => ({
+                    '&': '&amp;',
+                    '<': '&lt;',
+                    '>': '&gt;',
+                    "'": '&#39;',
+                    '"': '&quot;'
+                }[tag] || tag)
+            );
+        }
+
+        // QUẢN TRỊ TRẠM TRÊN WEB
+        function openAddDeviceModal() {
+            editingIndex = -1;
+            document.getElementById('deviceModalLabel').innerHTML = `<i class="fa-solid fa-plus-circle me-2"></i>Thêm Thiết Bị Đo Xa Mới`;
+            document.getElementById('dev-name').value = '';
+            document.getElementById('dev-group').value = 'Chưa phân nhóm';
+            document.getElementById('dev-router').value = '';
+            document.getElementById('dev-ip-device').value = '';
+            document.getElementById('dev-ip-sim').value = '';
+            document.getElementById('dev-lat').value = '';
+            document.getElementById('dev-lng').value = '';
+            document.getElementById('dev-error-msg').style.display = 'none';
+            deviceModal.show();
+        }
+
+        function openEditDeviceModal(index) {
+            editingIndex = index;
+            const device = globalDevices[index];
+            if (!device) return;
+
+            document.getElementById('deviceModalLabel').innerHTML = `<i class="fa-solid fa-pen-to-square me-2"></i>Chỉnh Sửa Thiết Bị Đo Xa`;
+            document.getElementById('dev-name').value = device.name || '';
+            document.getElementById('dev-group').value = device.group || 'Chưa phân nhóm';
+            document.getElementById('dev-router').value = device.router || '';
+            document.getElementById('dev-ip-device').value = device.ip_device || '';
+            document.getElementById('dev-ip-sim').value = device.ip_sim || '';
+            document.getElementById('dev-lat').value = device.lat !== undefined ? device.lat : '';
+            document.getElementById('dev-lng').value = device.lng !== undefined ? device.lng : '';
+            document.getElementById('dev-error-msg').style.display = 'none';
+            deviceModal.show();
+        }
+
+        function handleSaveDevice(event) {
+            event.preventDefault();
+            const name = document.getElementById('dev-name').value.trim();
+            const group = document.getElementById('dev-group').value.trim() || 'Chưa phân nhóm';
+            const router = document.getElementById('dev-router').value.trim();
+            const ip_device = document.getElementById('dev-ip-device').value.trim().replace(/\s/g, '');
+            const ip_sim = document.getElementById('dev-ip-sim').value.trim().replace(/\s/g, '');
+            
+            const lat_str = document.getElementById('dev-lat').value.trim();
+            const lng_str = document.getElementById('dev-lng').value.trim();
+            
+            const errorMsgDiv = document.getElementById('dev-error-msg');
+
+            if (!name || !router || !ip_device || !ip_sim) {
+                errorMsgDiv.innerText = "Vui lòng điền đầy đủ các trường thông tin bắt buộc!";
+                errorMsgDiv.style.display = 'block';
+                return;
+            }
+
+            const duplicateIndex = globalDevices.findIndex(d => d.ip_sim === ip_sim);
+            if (duplicateIndex !== -1 && duplicateIndex !== editingIndex) {
+                errorMsgDiv.innerText = "Địa chỉ IP SIM này đã tồn tại trong danh sách!";
+                errorMsgDiv.style.display = 'block';
+                return;
+            }
+
+            let lat = null, lng = null;
+            if (lat_str) lat = parseFloat(lat_str.replace(",", "."));
+            if (lng_str) lng = parseFloat(lng_str.replace(",", "."));
+
+            const now = new Date();
+            const timeStr = `${now.getHours().toString().padStart(2, '0')}:${now.getMinutes().toString().padStart(2, '0')}:${now.getSeconds().toString().padStart(2, '0')} ${now.getDate().toString().padStart(2, '0')}/${(now.getMonth()+1).toString().padStart(2, '0')}/${now.getFullYear()}`;
+
+            if (editingIndex === -1) {
+                globalDevices.push({
+                    id: now.getTime().toString(),
+                    name: name,
+                    group: group,
+                    router: router,
+                    ip_device: ip_device,
+                    ip_sim: ip_sim,
+                    lat: isNaN(lat) ? null : lat,
+                    lng: isNaN(lng) ? null : lng,
+                    status: 'Chưa quét',
+                    latency: 'N/A',
+                    services: {},
+                    last_updated: timeStr
+                });
+            } else {
+                const dev = globalDevices[editingIndex];
+                dev.name = name;
+                dev.group = group;
+                dev.router = router;
+                dev.ip_device = ip_device;
+                dev.ip_sim = ip_sim;
+                dev.lat = isNaN(lat) ? null : lat;
+                dev.lng = isNaN(lng) ? null : lng;
+                dev.last_updated = timeStr;
+            }
+
+            renderGroupsDropdown(globalDevices);
+            renderTable(globalDevices);
+            renderStats(globalDevices);
+            updateChartsData(globalDevices);
+            updateMapMarkers(globalDevices);
+            deviceModal.hide();
+        }
+
+        function deleteDevice(index) {
+            const device = globalDevices[index];
+            if (!device) return;
+
+            if (confirm(`Bạn có chắc chắn muốn xóa thiết bị "${device.name}" khỏi danh sách?`)) {
+                globalDevices.splice(index, 1);
+                renderGroupsDropdown(globalDevices);
+                renderTable(globalDevices);
+                renderStats(globalDevices);
+                updateChartsData(globalDevices);
+                updateMapMarkers(globalDevices);
+            }
+        }
+
+        function openWebImportModal() {
+            document.getElementById('web-import-text').value = '';
+            document.getElementById('web-import-status').style.display = 'none';
+            webImportModal.show();
+        }
+
+        function handleImportWebExcel(event) {
+            event.preventDefault();
+            const text = document.getElementById('web-import-text').value.trim();
+            if (!text) return;
+
+            const lines = text.split('\n');
+            let added = 0;
+            let skipped = 0;
+
+            lines.forEach(line => {
+                line = line.trim();
+                if (!line) return;
+
+                let parts = [];
+                for (const sep of ["\t", ",", "|"]) {
+                    if (line.includes(sep)) {
+                        parts = line.split(sep).map(p => p.trim());
+                        break;
+                    }
+                }
+                if (parts.length === 0) {
+                    parts = line.split(/\s{2,}/).map(p => p.trim());
+                }
+
+                if (parts.length < 4) {
+                    skipped++;
+                    return;
+                }
+
+                const name = parts[0];
+                const group = parts[1] || 'Chưa phân nhóm';
+                const router = parts[2] || 'N/A';
+                const ip_device = parts[3].replace(/\s/g, '');
+                const ip_sim = parts[4].replace(/\s/g, '');
+                
+                let lat = null, lng = null;
+                if (parts.length > 6) {
+                    lat = parseFloat(parts[5].replace(",", "."));
+                    lng = parseFloat(parts[6].replace(",", "."));
+                }
+
+                if (globalDevices.some(d => d.ip_sim === ip_sim)) {
+                    skipped++;
+                    return;
+                }
+
+                const now = new Date();
+                const timeStr = `${now.getHours().toString().padStart(2, '0')}:${now.getMinutes().toString().padStart(2, '0')}:${now.getSeconds().toString().padStart(2, '0')} ${now.getDate().toString().padStart(2, '0')}/${(now.getMonth()+1).toString().padStart(2, '0')}/${now.getFullYear()}`;
+
+                globalDevices.push({
+                    id: (now.getTime() + added).toString(),
+                    name: name,
+                    group: group,
+                    router: router,
+                    ip_device: ip_device,
+                    ip_sim: ip_sim,
+                    lat: isNaN(lat) ? null : lat,
+                    lng: isNaN(lng) ? null : lng,
+                    status: 'Chưa quét',
+                    latency: 'N/A',
+                    services: {},
+                    last_updated: timeStr
+                });
+                added++;
+            });
+
+            renderGroupsDropdown(globalDevices);
+            renderTable(globalDevices);
+            renderStats(globalDevices);
+            updateChartsData(globalDevices);
+            updateMapMarkers(globalDevices);
+
+            const statusDiv = document.getElementById('web-import-status');
+            statusDiv.className = "text-success fw-medium mt-2";
+            statusDiv.innerText = `Nạp thành công ${added} thiết bị! Bỏ qua ${skipped} thiết bị lỗi/trùng.`;
+            statusDiv.style.display = 'block';
+
+            setTimeout(() => {
+                webImportModal.hide();
+            }, 1200);
+        }
+
+        // LƯU DỮ LIỆU & ĐỒNG BỘ LÊN GITHUB
+        async function saveAndSyncToGitHub() {
+            const repo = localStorage.getItem('git_repo');
+            const branch = localStorage.getItem('git_branch') || 'main';
+            const path = localStorage.getItem('git_path') || 'devices.json';
+            const token = decToken(localStorage.getItem('git_token_enc')) || '';
+
+            if (!repo || !token) {
+                alert("Vui lòng cấu hình đầy đủ Tên Kho và GitHub Token PAT trước khi đồng bộ!");
+                openConfigModal();
+                return;
+            }
+
+            const syncBtn = document.getElementById('btn-sync-to-git');
+            const originalBtnHTML = syncBtn.innerHTML;
+            
+            syncBtn.disabled = true;
+            syncBtn.innerHTML = `<i class="fa-solid fa-spinner fa-spin me-2"></i>Đang đồng bộ...`;
+
+            const url = `https://api.github.com/repos/${repo}/contents/${path}`;
+            const headers = {
+                "Authorization": `token ${token}`,
+                "Accept": "application/vnd.github.v3+json",
+                "Content-Type": "application/json"
+            };
+
+            try {
+                let sha = null;
+                const cacheBuster = `t=${new Date().getTime()}`;
+                const getResponse = await fetch(`${url}?ref=${branch}&${cacheBuster}`, {
+                    headers: { "Authorization": `token ${token}` }
+                });
+
+                if (getResponse.ok) {
+                    const getData = await getResponse.json();
+                    sha = getData.sha;
+                }
+
+                const jsonStr = JSON.stringify(globalDevices, null, 4);
+                const base64Content = btoa(unescape(encodeURIComponent(jsonStr)));
+
+                const now = new Date();
+                const nowStr = `${now.getHours().toString().padStart(2, '0')}:${now.getMinutes().toString().padStart(2, '0')}:${now.getSeconds().toString().padStart(2, '0')} ${now.getDate().toString().padStart(2, '0')}/${(now.getMonth()+1).toString().padStart(2, '0')}/${now.getFullYear()}`;
+                
+                const putPayload = {
+                    message: `Cập nhật từ EVN Web Dashboard Nâng Cấp (${nowStr})`,
+                    content: base64Content,
+                    branch: branch
+                };
+                if (sha) {
+                    putPayload.sha = sha;
+                }
+
+                const putResponse = await fetch(url, {
+                    method: 'PUT',
+                    headers: headers,
+                    body: JSON.stringify(putPayload)
+                });
+
+                if (putResponse.ok) {
+                    alert(`Đồng bộ lên GitHub thành công! Hãy mở App di động Kivy và nhấn "1. TẢI DANH SÁCH" để cập nhật.`);
+                } else {
+                    const errData = await putResponse.json();
+                    alert(`Đồng bộ thất bại! GitHub báo lỗi: ${errData.message || 'Lỗi không xác định'}`);
+                }
+            } catch (err) {
+                alert(`Lỗi kết nối khi đồng bộ: ${err.message}`);
+            } finally {
+                syncBtn.disabled = false;
+                syncBtn.innerHTML = originalBtnHTML;
+            }
+        }
+    </script>
+</body>
+</html>

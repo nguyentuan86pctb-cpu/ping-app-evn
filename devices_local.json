@@ -1,0 +1,36 @@
+[
+    {
+        "id": "dev_01",
+        "name": "Trạm 110kV Tiền Hải",
+        "group": "Điện lực Tiền Hải",
+        "router": "EW50",
+        "ip_device": "10.59.17.20",
+        "ip_sim": "172.16.0.246",
+        "lat": 20.3541,
+        "lng": 106.5822,
+        "status": "Offline",
+        "latency": "Không phản hồi",
+        "services": {},
+        "last_updated": "22:02:00 27/05/2026"
+    },
+    {
+        "id": "dev_02",
+        "name": "Trạm 110kV Quỳnh Phụ",
+        "group": "Điện lực Quỳnh Phụ",
+        "router": "Robustel R2000",
+        "ip_device": "10.59.18.30",
+        "ip_sim": "172.16.0.247",
+        "lat": 20.6121,
+        "lng": 106.3542,
+        "status": "Online",
+        "latency": "42 ms",
+        "services": {
+            "80": {"status": "open", "latency_ms": 15},
+            "443": {"status": "closed"},
+            "502": {"status": "open", "latency_ms": 18},
+            "104": {"status": "closed"},
+            "http": {"status": "ok", "code": 200}
+        },
+        "last_updated": "07:30:00 28/05/2026"
+    }
+]
