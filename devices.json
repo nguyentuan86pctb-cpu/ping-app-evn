@@ -10,8 +10,7 @@
         "lng": 106.51942382,
         "status": "Online",
         "latency": "64 ms",
-        "services": {},
-        "last_updated": "15:41:23 28/05/2026"
+        "services": {}
     },
     {
         "id": "1779934465873",
@@ -24,8 +23,7 @@
         "lng": 106.51385650374333,
         "status": "Online",
         "latency": "140 ms",
-        "services": {},
-        "last_updated": "15:41:28 28/05/2026"
+        "services": {}
     },
     {
         "id": "1779934465874",
@@ -38,8 +36,7 @@
         "lng": 106.52580574489333,
         "status": "Online",
         "latency": "59 ms",
-        "services": {},
-        "last_updated": "15:41:31 28/05/2026"
+        "services": {}
     },
     {
         "id": "1779934465875",
@@ -52,8 +49,7 @@
         "lng": 106.51952669359588,
         "status": "Online",
         "latency": "81 ms",
-        "services": {},
-        "last_updated": "15:41:37 28/05/2026"
+        "services": {}
     },
     {
         "id": "1779934465876",
@@ -66,8 +62,7 @@
         "lng": 106.51347831227203,
         "status": "Online",
         "latency": "68 ms",
-        "services": {},
-        "last_updated": "15:42:09 28/05/2026"
+        "services": {}
     },
     {
         "id": "1779934465877",
@@ -80,8 +75,7 @@
         "lng": 106.53702944853471,
         "status": "Online",
         "latency": "56 ms",
-        "services": {},
-        "last_updated": "15:41:51 28/05/2026"
+        "services": {}
     },
     {
         "id": "1779934465878",
@@ -94,8 +88,7 @@
         "lng": 106.50993243197523,
         "status": "Online",
         "latency": "373 ms",
-        "services": {},
-        "last_updated": "15:42:25 28/05/2026"
+        "services": {}
     },
     {
         "id": "1779934465879",
@@ -108,8 +101,7 @@
         "lng": 106.4752568338205,
         "status": "Online",
         "latency": "78 ms",
-        "services": {},
-        "last_updated": "15:42:32 28/05/2026"
+        "services": {}
     },
     {
         "id": "1779934465880",
@@ -122,8 +114,7 @@
         "lng": 106.48323506454895,
         "status": "Online",
         "latency": "74 ms",
-        "services": {},
-        "last_updated": "15:42:39 28/05/2026"
+        "services": {}
     },
     {
         "id": "1779934465881",
@@ -136,8 +127,7 @@
         "lng": 106.49192810395506,
         "status": "Online",
         "latency": "81 ms",
-        "services": {},
-        "last_updated": "15:42:54 28/05/2026"
+        "services": {}
     },
     {
         "id": "1779934465882",
@@ -150,8 +140,7 @@
         "lng": 106.49878651240326,
         "status": "Online",
         "latency": "74 ms",
-        "services": {},
-        "last_updated": "15:42:58 28/05/2026"
+        "services": {}
     },
     {
         "id": "1779934465883",
@@ -164,8 +153,7 @@
         "lng": 106.5046679262278,
         "status": "Online",
         "latency": "90 ms",
-        "services": {},
-        "last_updated": "15:43:02 28/05/2026"
+        "services": {}
     },
     {
         "id": "1779934465884",
@@ -178,8 +166,7 @@
         "lng": 106.50005519725813,
         "status": "Online",
         "latency": "84 ms",
-        "services": {},
-        "last_updated": "15:43:07 28/05/2026"
+        "services": {}
     },
     {
         "id": "1779934465885",
@@ -192,8 +179,7 @@
         "lng": 106.51078403332858,
         "status": "Online",
         "latency": "43 ms",
-        "services": {},
-        "last_updated": "15:43:15 28/05/2026"
+        "services": {}
     },
     {
         "id": "1779934465886",
@@ -206,8 +192,7 @@
         "lng": 106.50709197261997,
         "status": "Online",
         "latency": "72 ms",
-        "services": {},
-        "last_updated": "15:43:18 28/05/2026"
+        "services": {}
     },
     {
         "id": "1779934465887",
@@ -220,8 +205,7 @@
         "lng": 106.51614408362911,
         "status": "Online",
         "latency": "56 ms",
-        "services": {},
-        "last_updated": "15:43:20 28/05/2026"
+        "services": {}
     },
     {
         "id": "1779934465888",
@@ -232,9 +216,10 @@
         "ip_sim": "172.16.0.141",
         "lat": 20.356372241175965,
         "lng": 106.54156506400037,
-        "status": "Chưa quét",
-        "latency": "N/A",
-        "services": {}
+        "status": "Online",
+        "latency": "744 ms",
+        "services": {},
+        "last_updated": "15:57:28 28/05/2026"
     },
     {
         "id": "1779934465889",
@@ -245,9 +230,10 @@
         "ip_sim": "172.16.0.168",
         "lat": 20.385703398944273,
         "lng": 106.53157249430545,
-        "status": "Chưa quét",
-        "latency": "N/A",
-        "services": {}
+        "status": "Online",
+        "latency": "689 ms",
+        "services": {},
+        "last_updated": "15:57:43 28/05/2026"
     },
     {
         "id": "1779934465890",
@@ -258,9 +244,10 @@
         "ip_sim": "172.16.1.162",
         "lat": 20.36774328399307,
         "lng": 106.53797358612702,
-        "status": "Chưa quét",
-        "latency": "N/A",
-        "services": {}
+        "status": "Online",
+        "latency": "73 ms",
+        "services": {},
+        "last_updated": "15:58:00 28/05/2026"
     },
     {
         "id": "1779934465891",
@@ -271,9 +258,10 @@
         "ip_sim": "172.16.0.152",
         "lat": 20.39939994352547,
         "lng": 106.51093222525691,
-        "status": "Chưa quét",
-        "latency": "N/A",
-        "services": {}
+        "status": "Online",
+        "latency": "51 ms",
+        "services": {},
+        "last_updated": "15:58:13 28/05/2026"
     },
     {
         "id": "1779934465892",
@@ -284,9 +272,10 @@
         "ip_sim": "172.16.1.21",
         "lat": 20.424268897780827,
         "lng": 106.53229333784721,
-        "status": "Chưa quét",
-        "latency": "N/A",
-        "services": {}
+        "status": "Online",
+        "latency": "70 ms",
+        "services": {},
+        "last_updated": "15:58:23 28/05/2026"
     },
     {
         "id": "1779934465893",
@@ -297,9 +286,10 @@
         "ip_sim": "172.16.1.159",
         "lat": 20.434071586299346,
         "lng": 106.56229921013123,
-        "status": "Chưa quét",
-        "latency": "N/A",
-        "services": {}
+        "status": "Online",
+        "latency": "53 ms",
+        "services": {},
+        "last_updated": "15:58:49 28/05/2026"
     },
     {
         "id": "1779934465894",
@@ -310,9 +300,10 @@
         "ip_sim": "172.16.0.14",
         "lat": 20.403309157696896,
         "lng": 106.48848347691518,
-        "status": "Chưa quét",
-        "latency": "N/A",
-        "services": {}
+        "status": "Online",
+        "latency": "66 ms",
+        "services": {},
+        "last_updated": "15:58:58 28/05/2026"
     },
     {
         "id": "1779934465895",
@@ -323,9 +314,10 @@
         "ip_sim": "172.16.2.32",
         "lat": 20.39066984513941,
         "lng": 106.55331850379658,
-        "status": "Chưa quét",
-        "latency": "N/A",
-        "services": {}
+        "status": "Online",
+        "latency": "91 ms",
+        "services": {},
+        "last_updated": "15:59:01 28/05/2026"
     },
     {
         "id": "1779934465896",
@@ -336,9 +328,10 @@
         "ip_sim": "172.16.1.57",
         "lat": 20.3795563242545,
         "lng": 106.55452147451683,
-        "status": "Chưa quét",
-        "latency": "N/A",
-        "services": {}
+        "status": "Online",
+        "latency": "75 ms",
+        "services": {},
+        "last_updated": "15:59:36 28/05/2026"
     },
     {
         "id": "1779934465897",
@@ -349,9 +342,10 @@
         "ip_sim": "172.16.0.254",
         "lat": 20.390956456652802,
         "lng": 106.55924082130264,
-        "status": "Chưa quét",
-        "latency": "N/A",
-        "services": {}
+        "status": "Offline",
+        "latency": "Không phản hồi",
+        "services": {},
+        "last_updated": "16:03:02 28/05/2026"
     },
     {
         "id": "1779934465898",
@@ -362,9 +356,10 @@
         "ip_sim": "172.16.0.175",
         "lat": 20.37954438123217,
         "lng": 106.50815278620415,
-        "status": "Chưa quét",
-        "latency": "N/A",
-        "services": {}
+        "status": "Online",
+        "latency": "90 ms",
+        "services": {},
+        "last_updated": "16:03:36 28/05/2026"
     },
     {
         "id": "1779934465899",
@@ -375,9 +370,10 @@
         "ip_sim": "172.16.1.63",
         "lat": 20.358010872182824,
         "lng": 106.48363538416673,
-        "status": "Chưa quét",
-        "latency": "N/A",
-        "services": {}
+        "status": "Online",
+        "latency": "61 ms",
+        "services": {},
+        "last_updated": "16:03:45 28/05/2026"
     },
     {
         "id": "1779934465900",
@@ -388,9 +384,10 @@
         "ip_sim": "172.16.1.64",
         "lat": 20.396557216325466,
         "lng": 106.51071898968752,
-        "status": "Chưa quét",
-        "latency": "N/A",
-        "services": {}
+        "status": "Online",
+        "latency": "72 ms",
+        "services": {},
+        "last_updated": "16:03:56 28/05/2026"
     },
     {
         "id": "1779934465901",
@@ -401,9 +398,10 @@
         "ip_sim": "172.16.0.135",
         "lat": 20.338596394340424,
         "lng": 106.49704441756754,
-        "status": "Chưa quét",
-        "latency": "N/A",
-        "services": {}
+        "status": "Online",
+        "latency": "88 ms",
+        "services": {},
+        "last_updated": "16:04:05 28/05/2026"
     },
     {
         "id": "1779934465902",
@@ -414,10 +412,10 @@
         "ip_sim": "172.16.1.61",
         "lat": 20.337279793179054,
         "lng": 106.49584949345254,
-        "status": "Chưa quét",
-        "latency": "N/A",
+        "status": "Online",
+        "latency": "70 ms",
         "services": {},
-        "last_updated": "15:49:10 28/05/2026"
+        "last_updated": "16:04:17 28/05/2026"
     },
     {
         "id": "1779934465903",
@@ -428,10 +426,10 @@
         "ip_sim": "172.16.1.62",
         "lat": 20.325072719234363,
         "lng": 106.49095580311858,
-        "status": "Chưa quét",
-        "latency": "N/A",
+        "status": "Online",
+        "latency": "52 ms",
         "services": {},
-        "last_updated": "15:49:18 28/05/2026"
+        "last_updated": "16:04:27 28/05/2026"
     },
     {
         "id": "1779934465904",
@@ -442,10 +440,10 @@
         "ip_sim": "172.16.0.20",
         "lat": 20.361762715274143,
         "lng": 106.53562397095028,
-        "status": "Chưa quét",
-        "latency": "N/A",
+        "status": "Online",
+        "latency": "98 ms",
         "services": {},
-        "last_updated": "15:49:25 28/05/2026"
+        "last_updated": "16:04:29 28/05/2026"
     },
     {
         "id": "1779934465905",
@@ -456,10 +454,10 @@
         "ip_sim": "172.16.0.68",
         "lat": 20.35629585723629,
         "lng": 106.53298199507574,
-        "status": "Chưa quét",
-        "latency": "N/A",
+        "status": "Online",
+        "latency": "72 ms",
         "services": {},
-        "last_updated": "15:49:32 28/05/2026"
+        "last_updated": "16:04:37 28/05/2026"
     },
     {
         "id": "1779934465906",
@@ -470,10 +468,10 @@
         "ip_sim": "172.16.1.58",
         "lat": 20.345384194465105,
         "lng": 106.54807478520856,
-        "status": "Chưa quét",
-        "latency": "N/A",
+        "status": "Online",
+        "latency": "53 ms",
         "services": {},
-        "last_updated": "15:49:39 28/05/2026"
+        "last_updated": "16:04:45 28/05/2026"
     },
     {
         "id": "1779934465907",
@@ -484,10 +482,10 @@
         "ip_sim": "172.16.1.59",
         "lat": 20.359338612595973,
         "lng": 106.5761226448797,
-        "status": "Chưa quét",
-        "latency": "N/A",
+        "status": "Online",
+        "latency": "51 ms",
         "services": {},
-        "last_updated": "15:49:45 28/05/2026"
+        "last_updated": "16:04:57 28/05/2026"
     },
     {
         "id": "1779934465908",
@@ -498,10 +496,10 @@
         "ip_sim": "172.16.0.201",
         "lat": 20.396400088593122,
         "lng": 106.56292215321618,
-        "status": "Chưa quét",
-        "latency": "N/A",
+        "status": "Offline",
+        "latency": "Không phản hồi",
         "services": {},
-        "last_updated": "15:49:52 28/05/2026"
+        "last_updated": "16:05:12 28/05/2026"
     },
     {
         "id": "1779934465909",
@@ -512,10 +510,10 @@
         "ip_sim": "172.16.0.253",
         "lat": 20.414012480563176,
         "lng": 106.57914147113962,
-        "status": "Chưa quét",
-        "latency": "N/A",
+        "status": "Online",
+        "latency": "67 ms",
         "services": {},
-        "last_updated": "15:49:57 28/05/2026"
+        "last_updated": "16:05:20 28/05/2026"
     },
     {
         "id": "1779934465910",
@@ -526,10 +524,10 @@
         "ip_sim": "172.16.0.8",
         "lat": 20.430462258780178,
         "lng": 106.57548427905083,
-        "status": "Chưa quét",
-        "latency": "N/A",
+        "status": "Online",
+        "latency": "86 ms",
         "services": {},
-        "last_updated": "15:50:04 28/05/2026"
+        "last_updated": "16:05:24 28/05/2026"
     },
     {
         "id": "1779934465911",
@@ -540,10 +538,10 @@
         "ip_sim": "172.16.1.19",
         "lat": 20.429517184099765,
         "lng": 106.5766805442697,
-        "status": "Chưa quét",
-        "latency": "N/A",
+        "status": "Online",
+        "latency": "76 ms",
         "services": {},
-        "last_updated": "15:50:11 28/05/2026"
+        "last_updated": "16:05:34 28/05/2026"
     },
     {
         "id": "1779934465912",
@@ -554,10 +552,10 @@
         "ip_sim": "172.16.1.20",
         "lat": 20.46170426279887,
         "lng": 106.5636342796322,
-        "status": "Chưa quét",
-        "latency": "N/A",
+        "status": "Online",
+        "latency": "78 ms",
         "services": {},
-        "last_updated": "15:50:17 28/05/2026"
+        "last_updated": "16:05:41 28/05/2026"
     },
     {
         "id": "1779934465913",
@@ -568,10 +566,10 @@
         "ip_sim": "172.16.0.177",
         "lat": 20.29445773944488,
         "lng": 106.5640929373537,
-        "status": "Chưa quét",
-        "latency": "N/A",
+        "status": "Online",
+        "latency": "74 ms",
         "services": {},
-        "last_updated": "15:50:23 28/05/2026"
+        "last_updated": "16:05:49 28/05/2026"
     },
     {
         "id": "1779934465914",
@@ -582,10 +580,10 @@
         "ip_sim": "172.16.0.204",
         "lat": 20.335305499180237,
         "lng": 106.55060075544104,
-        "status": "Chưa quét",
-        "latency": "N/A",
+        "status": "Online",
+        "latency": "73 ms",
         "services": {},
-        "last_updated": "15:51:17 28/05/2026"
+        "last_updated": "16:06:01 28/05/2026"
     },
     {
         "id": "1779934465915",
@@ -596,10 +594,10 @@
         "ip_sim": "172.16.1.60",
         "lat": 20.332006359902028,
         "lng": 106.55456237817143,
-        "status": "Chưa quét",
-        "latency": "N/A",
+        "status": "Online",
+        "latency": "67 ms",
         "services": {},
-        "last_updated": "15:51:24 28/05/2026"
+        "last_updated": "16:06:17 28/05/2026"
     },
     {
         "id": "1779934465916",
@@ -610,10 +608,10 @@
         "ip_sim": "172.16.1.65",
         "lat": 20.314818510504484,
         "lng": 106.56292617643795,
-        "status": "Chưa quét",
-        "latency": "N/A",
+        "status": "Online",
+        "latency": "91 ms",
         "services": {},
-        "last_updated": "15:51:30 28/05/2026"
+        "last_updated": "16:06:25 28/05/2026"
     },
     {
         "id": "1779934465917",
@@ -624,10 +622,10 @@
         "ip_sim": "172.16.1.140",
         "lat": 20.335904706363557,
         "lng": 106.52954206193084,
-        "status": "Chưa quét",
-        "latency": "N/A",
+        "status": "Online",
+        "latency": "68 ms",
         "services": {},
-        "last_updated": "15:51:36 28/05/2026"
+        "last_updated": "16:06:33 28/05/2026"
     },
     {
         "id": "1779934465918",
@@ -638,10 +636,10 @@
         "ip_sim": "172.16.1.158",
         "lat": 20.386100645099873,
         "lng": 106.53187826613177,
-        "status": "Chưa quét",
-        "latency": "N/A",
+        "status": "Online",
+        "latency": "74 ms",
         "services": {},
-        "last_updated": "15:51:42 28/05/2026"
+        "last_updated": "16:06:39 28/05/2026"
     },
     {
         "id": "1779934465919",
@@ -652,10 +650,10 @@
         "ip_sim": "172.16.1.160",
         "lat": 20.391106676055777,
         "lng": 106.51131041686294,
-        "status": "Chưa quét",
-        "latency": "N/A",
+        "status": "Online",
+        "latency": "84 ms",
         "services": {},
-        "last_updated": "15:51:48 28/05/2026"
+        "last_updated": "16:06:49 28/05/2026"
     },
     {
         "id": "1779934465920",
@@ -666,10 +664,10 @@
         "ip_sim": "172.16.1.125",
         "lat": 20.361115201947143,
         "lng": 106.50447145433554,
-        "status": "Chưa quét",
-        "latency": "N/A",
+        "status": "Online",
+        "latency": "101 ms",
         "services": {},
-        "last_updated": "15:50:31 28/05/2026"
+        "last_updated": "16:06:54 28/05/2026"
     },
     {
         "id": "1779934465921",
@@ -680,10 +678,10 @@
         "ip_sim": "172.16.1.126",
         "lat": 20.390275753430554,
         "lng": 106.57764211630217,
-        "status": "Chưa quét",
-        "latency": "N/A",
+        "status": "Online",
+        "latency": "84 ms",
         "services": {},
-        "last_updated": "15:50:39 28/05/2026"
+        "last_updated": "16:06:57 28/05/2026"
     },
     {
         "id": "1779934465922",
@@ -694,10 +692,10 @@
         "ip_sim": "172.16.1.163",
         "lat": 20.36290182921568,
         "lng": 106.5351465377566,
-        "status": "Chưa quét",
-        "latency": "N/A",
+        "status": "Online",
+        "latency": "56 ms",
         "services": {},
-        "last_updated": "15:50:44 28/05/2026"
+        "last_updated": "16:07:03 28/05/2026"
     },
     {
         "id": "1779934465923",
@@ -708,10 +706,10 @@
         "ip_sim": "172.16.1.164",
         "lat": 20.37449680158252,
         "lng": 106.55443698494601,
-        "status": "Chưa quét",
-        "latency": "N/A",
+        "status": "Online",
+        "latency": "88 ms",
         "services": {},
-        "last_updated": "15:50:52 28/05/2026"
+        "last_updated": "16:00:53 28/05/2026"
     },
     {
         "id": "1779934465924",
@@ -722,10 +720,10 @@
         "ip_sim": "172.16.1.165",
         "lat": 20.367833492111323,
         "lng": 106.55633598892565,
-        "status": "Chưa quét",
-        "latency": "N/A",
+        "status": "Online",
+        "latency": "58 ms",
         "services": {},
-        "last_updated": "15:51:01 28/05/2026"
+        "last_updated": "16:07:09 28/05/2026"
     },
     {
         "id": "1779934465925",
@@ -736,10 +734,10 @@
         "ip_sim": "172.16.1.197",
         "lat": 20.40107488892488,
         "lng": 106.47442500461112,
-        "status": "Chưa quét",
-        "latency": "N/A",
+        "status": "Online",
+        "latency": "72 ms",
         "services": {},
-        "last_updated": "15:51:59 28/05/2026"
+        "last_updated": "16:07:14 28/05/2026"
     },
     {
         "id": "1779934465926",
@@ -750,10 +748,10 @@
         "ip_sim": "172.16.1.211",
         "lat": 20.388063923321198,
         "lng": 106.50849911738776,
-        "status": "Chưa quét",
-        "latency": "N/A",
+        "status": "Offline",
+        "latency": "Không phản hồi",
         "services": {},
-        "last_updated": "15:52:10 28/05/2026"
+        "last_updated": "16:07:25 28/05/2026"
     },
     {
         "id": "1779934465927",
@@ -764,10 +762,10 @@
         "ip_sim": "172.16.0.50",
         "lat": 20.39468613360712,
         "lng": 106.4749185310782,
-        "status": "Chưa quét",
-        "latency": "N/A",
+        "status": "Offline",
+        "latency": "Không phản hồi",
         "services": {},
-        "last_updated": "15:52:18 28/05/2026"
+        "last_updated": "16:07:36 28/05/2026"
     },
     {
         "id": "1779934465928",
@@ -778,10 +776,10 @@
         "ip_sim": "172.16.2.25",
         "lat": 20.36797116150569,
         "lng": 106.50431186290301,
-        "status": "Chưa quét",
-        "latency": "N/A",
+        "status": "Online",
+        "latency": "57 ms",
         "services": {},
-        "last_updated": "15:52:27 28/05/2026"
+        "last_updated": "16:07:41 28/05/2026"
     },
     {
         "id": "1779934465929",
@@ -792,10 +790,10 @@
         "ip_sim": "172.16.2.26",
         "lat": 20.390956456652802,
         "lng": 106.55924082130264,
-        "status": "Chưa quét",
-        "latency": "N/A",
+        "status": "Online",
+        "latency": "46 ms",
         "services": {},
-        "last_updated": "15:52:37 28/05/2026"
+        "last_updated": "16:07:47 28/05/2026"
     },
     {
         "id": "1779934465930",
@@ -806,10 +804,10 @@
         "ip_sim": "172.16.2.27",
         "lat": 20.409360073624082,
         "lng": 106.50369763710552,
-        "status": "Chưa quét",
-        "latency": "N/A",
+        "status": "Online",
+        "latency": "63 ms",
         "services": {},
-        "last_updated": "15:52:42 28/05/2026"
+        "last_updated": "16:07:53 28/05/2026"
     },
     {
         "id": "1779934465931",
@@ -820,10 +818,10 @@
         "ip_sim": "172.16.2.28",
         "lat": 20.367743283993075,
         "lng": 106.53797358612702,
-        "status": "Chưa quét",
-        "latency": "N/A",
+        "status": "Online",
+        "latency": "64 ms",
         "services": {},
-        "last_updated": "15:52:48 28/05/2026"
+        "last_updated": "16:08:01 28/05/2026"
     },
     {
         "id": "1779934465932",
@@ -834,10 +832,10 @@
         "ip_sim": "172.16.2.29",
         "lat": 20.37951829514585,
         "lng": 106.50820777158863,
-        "status": "Chưa quét",
-        "latency": "N/A",
+        "status": "Online",
+        "latency": "64 ms",
         "services": {},
-        "last_updated": "15:52:55 28/05/2026"
+        "last_updated": "16:08:06 28/05/2026"
     },
     {
         "id": "1779934465933",
@@ -848,10 +846,10 @@
         "ip_sim": "172.16.2.30",
         "lat": 20.380353047212207,
         "lng": 106.50447145443434,
-        "status": "Chưa quét",
-        "latency": "N/A",
+        "status": "Online",
+        "latency": "59 ms",
         "services": {},
-        "last_updated": "15:53:02 28/05/2026"
+        "last_updated": "16:08:20 28/05/2026"
     },
     {
         "id": "1779934465934",
@@ -862,10 +860,10 @@
         "ip_sim": "172.16.2.31",
         "lat": 20.385187040279046,
         "lng": 106.51694238515188,
-        "status": "Chưa quét",
-        "latency": "N/A",
+        "status": "Online",
+        "latency": "57 ms",
         "services": {},
-        "last_updated": "15:53:09 28/05/2026"
+        "last_updated": "16:08:26 28/05/2026"
     },
     {
         "id": "1779934465935",
@@ -876,9 +874,9 @@
         "ip_sim": "172.16.2.33",
         "lat": 20.391638413912823,
         "lng": 106.57742217515954,
-        "status": "Chưa quét",
-        "latency": "N/A",
+        "status": "Online",
+        "latency": "88 ms",
         "services": {},
-        "last_updated": "15:53:17 28/05/2026"
+        "last_updated": "16:08:33 28/05/2026"
     }
 ]
