@@ -407,7 +407,7 @@
     },
     {
         "id": "1779934465902",
-        "name": "280.E11.9_476_LBS87",
+        "name": "LBS87",
         "group": "E11.9_476",
         "router": "RACOM - M!DGE3-W-N",
         "ip_device": "10.28.0.138/30",
@@ -416,11 +416,12 @@
         "lng": 106.49584949345254,
         "status": "Chưa quét",
         "latency": "N/A",
-        "services": {}
+        "services": {},
+        "last_updated": "15:49:10 28/05/2026"
     },
     {
         "id": "1779934465903",
-        "name": "281.E11.9_476_LBS102.1",
+        "name": "LBS102.1",
         "group": "E11.9_476",
         "router": "RACOM - M!DGE3-W-N",
         "ip_device": "10.28.0.142/30",
@@ -429,11 +430,12 @@
         "lng": 106.49095580311858,
         "status": "Chưa quét",
         "latency": "N/A",
-        "services": {}
+        "services": {},
+        "last_updated": "15:49:18 28/05/2026"
     },
     {
         "id": "1779934465904",
-        "name": "39.E11.9_478_MC64",
+        "name": "MC64",
         "group": "E11.9_478",
         "router": "EW50-EUS",
         "ip_device": "10.28.0.2/30",
@@ -442,11 +444,12 @@
         "lng": 106.53562397095028,
         "status": "Chưa quét",
         "latency": "N/A",
-        "services": {}
+        "services": {},
+        "last_updated": "15:49:25 28/05/2026"
     },
     {
         "id": "1779934465905",
-        "name": "60.E11.9_478_LBS70.06_NamChinh",
+        "name": "LBS70.06_NamChinh",
         "group": "E11.9_478",
         "router": "Secflow 1v",
         "ip_device": "10.28.0.86/30",
@@ -455,11 +458,12 @@
         "lng": 106.53298199507574,
         "status": "Chưa quét",
         "latency": "N/A",
-        "services": {}
+        "services": {},
+        "last_updated": "15:49:32 28/05/2026"
     },
     {
         "id": "1779934465906",
-        "name": "277.E11.9_478_LBS124",
+        "name": "LBS124",
         "group": "E11.9_478",
         "router": "RACOM - M!DGE3-W-N",
         "ip_device": "10.28.0.126/30",
@@ -468,11 +472,12 @@
         "lng": 106.54807478520856,
         "status": "Chưa quét",
         "latency": "N/A",
-        "services": {}
+        "services": {},
+        "last_updated": "15:49:39 28/05/2026"
     },
     {
         "id": "1779934465907",
-        "name": "278.E11.9_478_LBS105.69.4",
+        "name": "LBS105.69.4",
         "group": "E11.9_478",
         "router": "RACOM - M!DGE3-W-N",
         "ip_device": "10.28.0.130/30",
@@ -481,11 +486,12 @@
         "lng": 106.5761226448797,
         "status": "Chưa quét",
         "latency": "N/A",
-        "services": {}
+        "services": {},
+        "last_updated": "15:49:45 28/05/2026"
     },
     {
         "id": "1779934465908",
-        "name": "152.E11.9_482_MC72",
+        "name": "MC72",
         "group": "E11.9_482",
         "router": "EW50-EUS",
         "ip_device": "10.28.0.90/30",
@@ -494,11 +500,12 @@
         "lng": 106.56292215321618,
         "status": "Chưa quét",
         "latency": "N/A",
-        "services": {}
+        "services": {},
+        "last_updated": "15:49:52 28/05/2026"
     },
     {
         "id": "1779934465909",
-        "name": "247.E11.9_482_LBS141",
+        "name": "LBS141",
         "group": "E11.9_482",
         "router": "EW50-EUS",
         "ip_device": "10.28.0.102/30",
@@ -507,11 +514,12 @@
         "lng": 106.57914147113962,
         "status": "Chưa quét",
         "latency": "N/A",
-        "services": {}
+        "services": {},
+        "last_updated": "15:49:57 28/05/2026"
     },
     {
         "id": "1779934465910",
-        "name": "42.TGDongHoang_471_MC30",
+        "name": "MC30",
         "group": "TGDH_471",
         "router": "EW50-EUS",
         "ip_device": "10.28.0.14/30",
@@ -520,11 +528,12 @@
         "lng": 106.57548427905083,
         "status": "Chưa quét",
         "latency": "N/A",
-        "services": {}
+        "services": {},
+        "last_updated": "15:50:04 28/05/2026"
     },
     {
         "id": "1779934465911",
-        "name": "273.TGDHoang_471_LBS 26B(28.1)",
+        "name": "LBS 26B(28.1)",
         "group": "TGDH_471",
         "router": "RACOM - M!DGE3-W-N",
         "ip_device": "10.28.0.110/30",
@@ -533,11 +542,12 @@
         "lng": 106.5766805442697,
         "status": "Chưa quét",
         "latency": "N/A",
-        "services": {}
+        "services": {},
+        "last_updated": "15:50:11 28/05/2026"
     },
     {
         "id": "1779934465912",
-        "name": "274.TGDHoang_471_LBS28.28",
+        "name": "LBS28.28",
         "group": "TGDH_471",
         "router": "RACOM - M!DGE3-W-N",
         "ip_device": "10.28.0.114/30",
@@ -546,11 +556,12 @@
         "lng": 106.5636342796322,
         "status": "Chưa quét",
         "latency": "N/A",
-        "services": {}
+        "services": {},
+        "last_updated": "15:50:17 28/05/2026"
     },
     {
         "id": "1779934465913",
-        "name": "54.TGNamThanh_471_MC62.10.04_ConVanh",
+        "name": "MC62.10.04_ConVanh",
         "group": "TGNT_471",
         "router": "EW50-EUS",
         "ip_device": "10.28.0.62/30",
@@ -559,11 +570,12 @@
         "lng": 106.5640929373537,
         "status": "Chưa quét",
         "latency": "N/A",
-        "services": {}
+        "services": {},
+        "last_updated": "15:50:23 28/05/2026"
     },
     {
         "id": "1779934465914",
-        "name": "153.TGNamThanh_471_MC15.1",
+        "name": "MC15.1",
         "group": "TGNT_471",
         "router": "EW50-EUS",
         "ip_device": "10.28.0.94/30",
@@ -572,11 +584,12 @@
         "lng": 106.55060075544104,
         "status": "Chưa quét",
         "latency": "N/A",
-        "services": {}
+        "services": {},
+        "last_updated": "15:51:17 28/05/2026"
     },
     {
         "id": "1779934465915",
-        "name": "279.TGNThanh_471_LBS20.2",
+        "name": "LBS20.2",
         "group": "TGNT_471",
         "router": "RACOM - M!DGE3-W-N",
         "ip_device": "10.28.0.134/30",
@@ -585,11 +598,12 @@
         "lng": 106.55456237817143,
         "status": "Chưa quét",
         "latency": "N/A",
-        "services": {}
+        "services": {},
+        "last_updated": "15:51:24 28/05/2026"
     },
     {
         "id": "1779934465916",
-        "name": "284.TGNThanh_471_LBS47.12",
+        "name": "LBS47.12",
         "group": "TGNT_471",
         "router": "RACOM - M!DGE3-W-N",
         "ip_device": "10.28.0.154/30",
@@ -598,11 +612,12 @@
         "lng": 106.56292617643795,
         "status": "Chưa quét",
         "latency": "N/A",
-        "services": {}
+        "services": {},
+        "last_updated": "15:51:30 28/05/2026"
     },
     {
         "id": "1779934465917",
-        "name": "388.TGNamThanh_471_LBS15.15.13",
+        "name": "LBS15.15.13",
         "group": "TGNT_471",
         "router": "MOXA-EDS-G308",
         "ip_device": "10.28.0.214/30",
@@ -611,11 +626,12 @@
         "lng": 106.52954206193084,
         "status": "Chưa quét",
         "latency": "N/A",
-        "services": {}
+        "services": {},
+        "last_updated": "15:51:36 28/05/2026"
     },
     {
         "id": "1779934465918",
-        "name": "378.E11.9_375_LBS16.1",
+        "name": "LBS16.1",
         "group": "E11.9_375",
         "router": "RACOM - M!DGE3-W-N",
         "ip_device": "10.28.0.174/30",
@@ -624,11 +640,12 @@
         "lng": 106.53187826613177,
         "status": "Chưa quét",
         "latency": "N/A",
-        "services": {}
+        "services": {},
+        "last_updated": "15:51:42 28/05/2026"
     },
     {
         "id": "1779934465919",
-        "name": "380.E11.9_374_LBS21",
+        "name": "LBS21",
         "group": "E11.9_374",
         "router": "RACOM - M!DGE3-W-N",
         "ip_device": "10.28.0.182/30",
@@ -637,11 +654,12 @@
         "lng": 106.51131041686294,
         "status": "Chưa quét",
         "latency": "N/A",
-        "services": {}
+        "services": {},
+        "last_updated": "15:51:48 28/05/2026"
     },
     {
         "id": "1779934465920",
-        "name": "386.E11.9_474_476_LBS51.1/59",
+        "name": "LBS51.1/59",
         "group": "E11.9_476",
         "router": "RACOM - M!DGE3-W-N",
         "ip_device": "10.28.0.206/30",
@@ -650,11 +668,12 @@
         "lng": 106.50447145433554,
         "status": "Chưa quét",
         "latency": "N/A",
-        "services": {}
+        "services": {},
+        "last_updated": "15:50:31 28/05/2026"
     },
     {
         "id": "1779934465921",
-        "name": "387.E11.9_482_LBS102.2_NgaiChau",
+        "name": "LBS102.2_NgaiChau",
         "group": "E11.9_482",
         "router": "RACOM - M!DGE3-W-N",
         "ip_device": "10.28.0.210/30",
@@ -663,11 +682,12 @@
         "lng": 106.57764211630217,
         "status": "Chưa quét",
         "latency": "N/A",
-        "services": {}
+        "services": {},
+        "last_updated": "15:50:39 28/05/2026"
     },
     {
         "id": "1779934465922",
-        "name": "383.E11.9_478_473_LBS62.1/128",
+        "name": "LBS62.1/128",
         "group": "E11.9_478",
         "router": "RACOM - M!DGE3-W-N",
         "ip_device": "10.28.0.194/30",
@@ -676,11 +696,12 @@
         "lng": 106.5351465377566,
         "status": "Chưa quét",
         "latency": "N/A",
-        "services": {}
+        "services": {},
+        "last_updated": "15:50:44 28/05/2026"
     },
     {
         "id": "1779934465923",
-        "name": "384.E11.9_473_LBS94A",
+        "name": "LBS94A",
         "group": "E11.9_473",
         "router": "RACOM - M!DGE3-W-N",
         "ip_device": "10.28.0.198/30",
@@ -689,11 +710,12 @@
         "lng": 106.55443698494601,
         "status": "Chưa quét",
         "latency": "N/A",
-        "services": {}
+        "services": {},
+        "last_updated": "15:50:52 28/05/2026"
     },
     {
         "id": "1779934465924",
-        "name": "385.E11.9_473_LBS103.1A_NamCuong",
+        "name": "LBS103.1A_NamCuong",
         "group": "E11.9_476",
         "router": "RACOM - M!DGE3-W-N",
         "ip_device": "10.28.0.202/30",
@@ -702,11 +724,12 @@
         "lng": 106.55633598892565,
         "status": "Chưa quét",
         "latency": "N/A",
-        "services": {}
+        "services": {},
+        "last_updated": "15:51:01 28/05/2026"
     },
     {
         "id": "1779934465925",
-        "name": "456.E11.9_373_ MC 112.1.13.1(13A)   ( KHÁCH  HÀNG)",
+        "name": "MC 112.1.13.1(13A)   ( KHÁCH  HÀNG)",
         "group": "E11.9_373",
         "router": "EW50-EUS",
         "ip_device": "10.28.0.226/30",
@@ -715,11 +738,12 @@
         "lng": 106.47442500461112,
         "status": "Chưa quét",
         "latency": "N/A",
-        "services": {}
+        "services": {},
+        "last_updated": "15:51:59 28/05/2026"
     },
     {
         "id": "1779934465926",
-        "name": "586.E11.9_374_MC31A_1  ( KHÁCH  HÀNG ) 12/25",
+        "name": "MC31A_1  ( KHÁCH  HÀNG ) 12/25",
         "group": "E11.9_374",
         "router": "N/A",
         "ip_device": "10.28.1.10",
@@ -728,11 +752,12 @@
         "lng": 106.50849911738776,
         "status": "Chưa quét",
         "latency": "N/A",
-        "services": {}
+        "services": {},
+        "last_updated": "15:52:10 28/05/2026"
     },
     {
         "id": "1779934465927",
-        "name": "440.E11.9_373_RMU_Cty Năng Lượng Xanh  ( KHÁCH  HÀNG)",
+        "name": "RMU_Cty Năng Lượng Xanh  ( KHÁCH  HÀNG)",
         "group": "E11.3_472",
         "router": "ABB_ARG600",
         "ip_device": "10.28.0.218/30",
@@ -741,11 +766,12 @@
         "lng": 106.4749185310782,
         "status": "Chưa quét",
         "latency": "N/A",
-        "services": {}
+        "services": {},
+        "last_updated": "15:52:18 28/05/2026"
     },
     {
         "id": "1779934465928",
-        "name": "506.E11.9_474_LBS_01_N.VanTruong",
+        "name": "LBS_01_N.VanTruong",
         "group": "474 E11.9",
         "router": "EW50",
         "ip_device": "10.28.0.230/30",
@@ -754,11 +780,12 @@
         "lng": 106.50431186290301,
         "status": "Chưa quét",
         "latency": "N/A",
-        "services": {}
+        "services": {},
+        "last_updated": "15:52:27 28/05/2026"
     },
     {
         "id": "1779934465929",
-        "name": "507.E11.9_473_LBS_63.08",
+        "name": "LBS_63.08",
         "group": "471 E11.9",
         "router": "EW50",
         "ip_device": "10.28.0.234/30",
@@ -767,11 +794,12 @@
         "lng": 106.55924082130264,
         "status": "Chưa quét",
         "latency": "N/A",
-        "services": {}
+        "services": {},
+        "last_updated": "15:52:37 28/05/2026"
     },
     {
         "id": "1779934465930",
-        "name": "508.E11.9_373_LBS_58",
+        "name": "LBS_58",
         "group": "373 E11.9",
         "router": "EW50",
         "ip_device": "10.28.0.238/30",
@@ -780,11 +808,12 @@
         "lng": 106.50369763710552,
         "status": "Chưa quét",
         "latency": "N/A",
-        "services": {}
+        "services": {},
+        "last_updated": "15:52:42 28/05/2026"
     },
     {
         "id": "1779934465931",
-        "name": "509.E11.9_375_LBS_01A",
+        "name": "LBS_01A",
         "group": "375 E11.9",
         "router": "EW50",
         "ip_device": "10.28.0.242/30",
@@ -793,11 +822,12 @@
         "lng": 106.53797358612702,
         "status": "Chưa quét",
         "latency": "N/A",
-        "services": {}
+        "services": {},
+        "last_updated": "15:52:48 28/05/2026"
     },
     {
         "id": "1779934465932",
-        "name": "510.E11.9_374_LBS_43_01_N.BatCap",
+        "name": "LBS_43_01_N.BatCap",
         "group": "374 E11.9",
         "router": "EW50",
         "ip_device": "10.28.0.246/30",
@@ -806,11 +836,12 @@
         "lng": 106.50820777158863,
         "status": "Chưa quét",
         "latency": "N/A",
-        "services": {}
+        "services": {},
+        "last_updated": "15:52:55 28/05/2026"
     },
     {
         "id": "1779934465933",
-        "name": "511.E11.9_374_RE49",
+        "name": "RE49",
         "group": "374 E11.9",
         "router": "EW50",
         "ip_device": "10.28.0.250/30",
@@ -819,11 +850,12 @@
         "lng": 106.50447145443434,
         "status": "Chưa quét",
         "latency": "N/A",
-        "services": {}
+        "services": {},
+        "last_updated": "15:53:02 28/05/2026"
     },
     {
         "id": "1779934465934",
-        "name": "512.E11.9_476_LBS18",
+        "name": "LBS18",
         "group": "476 E11.9",
         "router": "EW50",
         "ip_device": "10.28.0.254/30",
@@ -832,11 +864,12 @@
         "lng": 106.51694238515188,
         "status": "Chưa quét",
         "latency": "N/A",
-        "services": {}
+        "services": {},
+        "last_updated": "15:53:09 28/05/2026"
     },
     {
         "id": "1779934465935",
-        "name": "514.E11.9_482_LBS_102A",
+        "name": "LBS_102A",
         "group": "482 E11.9",
         "router": "Robustel/TQ",
         "ip_device": "10.28.1.6/30",
@@ -845,6 +878,7 @@
         "lng": 106.57742217515954,
         "status": "Chưa quét",
         "latency": "N/A",
-        "services": {}
+        "services": {},
+        "last_updated": "15:53:17 28/05/2026"
     }
 ]
