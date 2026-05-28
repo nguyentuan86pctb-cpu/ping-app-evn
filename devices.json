@@ -440,12 +440,12 @@
         "router": "RACOM - M!DGE3-W-N",
         "ip_device": "10.28.0.142/30",
         "ip_sim": "172.16.1.62",
-        "lat": null,
-        "lng": null,
+        "lat": 20.325072719234363,
+        "lng": 106.49095580311858,
         "status": "Chưa quét",
         "latency": "N/A",
         "services": {},
-        "last_updated": "09:14:25 28/05/2026"
+        "last_updated": "15:04:17 28/05/2026"
     },
     {
         "id": "1779934465904",
@@ -454,12 +454,12 @@
         "router": "EW50-EUS",
         "ip_device": "10.28.0.2/30",
         "ip_sim": "172.16.0.20",
-        "lat": null,
-        "lng": null,
+        "lat": 20.361762715274143,
+        "lng": 106.53562397095028,
         "status": "Chưa quét",
         "latency": "N/A",
         "services": {},
-        "last_updated": "09:14:25 28/05/2026"
+        "last_updated": "15:04:42 28/05/2026"
     },
     {
         "id": "1779934465905",
@@ -468,12 +468,12 @@
         "router": "Secflow 1v",
         "ip_device": "10.28.0.86/30",
         "ip_sim": "172.16.0.68",
-        "lat": null,
-        "lng": null,
+        "lat": 20.35629585723629,
+        "lng": 106.53298199507574,
         "status": "Chưa quét",
         "latency": "N/A",
         "services": {},
-        "last_updated": "09:14:25 28/05/2026"
+        "last_updated": "15:05:31 28/05/2026"
     },
     {
         "id": "1779934465906",
@@ -482,12 +482,12 @@
         "router": "RACOM - M!DGE3-W-N",
         "ip_device": "10.28.0.126/30",
         "ip_sim": "172.16.1.58",
-        "lat": null,
-        "lng": null,
+        "lat": 20.345384194465105,
+        "lng": 106.54807478520856,
         "status": "Chưa quét",
         "latency": "N/A",
         "services": {},
-        "last_updated": "09:14:25 28/05/2026"
+        "last_updated": "15:05:56 28/05/2026"
     },
     {
         "id": "1779934465907",
@@ -496,12 +496,12 @@
         "router": "RACOM - M!DGE3-W-N",
         "ip_device": "10.28.0.130/30",
         "ip_sim": "172.16.1.59",
-        "lat": null,
-        "lng": null,
+        "lat": 20.359338612595973,
+        "lng": 106.5761226448797,
         "status": "Chưa quét",
         "latency": "N/A",
         "services": {},
-        "last_updated": "09:14:25 28/05/2026"
+        "last_updated": "15:06:20 28/05/2026"
     },
     {
         "id": "1779934465908",
@@ -510,12 +510,12 @@
         "router": "EW50-EUS",
         "ip_device": "10.28.0.90/30",
         "ip_sim": "172.16.0.201",
-        "lat": null,
-        "lng": null,
+        "lat": 20.396400088593122,
+        "lng": 106.56292215321618,
         "status": "Chưa quét",
         "latency": "N/A",
         "services": {},
-        "last_updated": "09:14:25 28/05/2026"
+        "last_updated": "15:06:39 28/05/2026"
     },
     {
         "id": "1779934465909",
@@ -524,12 +524,12 @@
         "router": "EW50-EUS",
         "ip_device": "10.28.0.102/30",
         "ip_sim": "172.16.0.253",
-        "lat": null,
-        "lng": null,
+        "lat": 20.414012480563176,
+        "lng": 106.57914147113962,
         "status": "Chưa quét",
         "latency": "N/A",
         "services": {},
-        "last_updated": "09:14:25 28/05/2026"
+        "last_updated": "15:06:58 28/05/2026"
     },
     {
         "id": "1779934465910",
@@ -538,12 +538,12 @@
         "router": "EW50-EUS",
         "ip_device": "10.28.0.14/30",
         "ip_sim": "172.16.0.8",
-        "lat": null,
-        "lng": null,
+        "lat": 20.430462258780178,
+        "lng": 106.57548427905083,
         "status": "Chưa quét",
         "latency": "N/A",
         "services": {},
-        "last_updated": "09:14:25 28/05/2026"
+        "last_updated": "15:07:16 28/05/2026"
     },
     {
         "id": "1779934465911",
@@ -552,12 +552,12 @@
         "router": "RACOM - M!DGE3-W-N",
         "ip_device": "10.28.0.110/30",
         "ip_sim": "172.16.1.19",
-        "lat": null,
-        "lng": null,
+        "lat": 20.429517184099765,
+        "lng": 106.5766805442697,
         "status": "Chưa quét",
         "latency": "N/A",
         "services": {},
-        "last_updated": "09:14:25 28/05/2026"
+        "last_updated": "15:07:52 28/05/2026"
     },
     {
         "id": "1779934465912",
@@ -566,12 +566,12 @@
         "router": "RACOM - M!DGE3-W-N",
         "ip_device": "10.28.0.114/30",
         "ip_sim": "172.16.1.20",
-        "lat": null,
-        "lng": null,
+        "lat": 20.46170426279887,
+        "lng": 106.5636342796322,
         "status": "Chưa quét",
         "latency": "N/A",
         "services": {},
-        "last_updated": "09:14:25 28/05/2026"
+        "last_updated": "15:08:18 28/05/2026"
     },
     {
         "id": "1779934465913",
@@ -580,12 +580,12 @@
         "router": "EW50-EUS",
         "ip_device": "10.28.0.62/30",
         "ip_sim": "172.16.0.177",
-        "lat": null,
-        "lng": null,
+        "lat": 20.29445773944488,
+        "lng": 106.5640929373537,
         "status": "Chưa quét",
         "latency": "N/A",
         "services": {},
-        "last_updated": "09:14:25 28/05/2026"
+        "last_updated": "15:08:32 28/05/2026"
     },
     {
         "id": "1779934465914",
@@ -594,12 +594,12 @@
         "router": "EW50-EUS",
         "ip_device": "10.28.0.94/30",
         "ip_sim": "172.16.0.204",
-        "lat": null,
-        "lng": null,
+        "lat": 20.335305499180237,
+        "lng": 106.55060075544104,
         "status": "Chưa quét",
         "latency": "N/A",
         "services": {},
-        "last_updated": "09:14:25 28/05/2026"
+        "last_updated": "15:08:45 28/05/2026"
     },
     {
         "id": "1779934465915",
@@ -608,12 +608,12 @@
         "router": "RACOM - M!DGE3-W-N",
         "ip_device": "10.28.0.134/30",
         "ip_sim": "172.16.1.60",
-        "lat": null,
-        "lng": null,
+        "lat": 20.332006359902028,
+        "lng": 106.55456237817143,
         "status": "Chưa quét",
         "latency": "N/A",
         "services": {},
-        "last_updated": "09:14:25 28/05/2026"
+        "last_updated": "15:08:58 28/05/2026"
     },
     {
         "id": "1779934465916",
@@ -622,12 +622,12 @@
         "router": "RACOM - M!DGE3-W-N",
         "ip_device": "10.28.0.154/30",
         "ip_sim": "172.16.1.65",
-        "lat": null,
-        "lng": null,
+        "lat": 20.314818510504484,
+        "lng": 106.56292617643795,
         "status": "Chưa quét",
         "latency": "N/A",
         "services": {},
-        "last_updated": "09:14:25 28/05/2026"
+        "last_updated": "15:09:14 28/05/2026"
     },
     {
         "id": "1779934465917",
@@ -636,12 +636,12 @@
         "router": "MOXA-EDS-G308",
         "ip_device": "10.28.0.214/30",
         "ip_sim": "172.16.1.140",
-        "lat": null,
-        "lng": null,
+        "lat": 20.335904706363557,
+        "lng": 106.52954206193084,
         "status": "Chưa quét",
         "latency": "N/A",
         "services": {},
-        "last_updated": "09:14:25 28/05/2026"
+        "last_updated": "15:09:28 28/05/2026"
     },
     {
         "id": "1779934465918",
@@ -650,12 +650,12 @@
         "router": "RACOM - M!DGE3-W-N",
         "ip_device": "10.28.0.174/30",
         "ip_sim": "172.16.1.158",
-        "lat": null,
-        "lng": null,
+        "lat": 20.386100645099873,
+        "lng": 106.53187826613177,
         "status": "Chưa quét",
         "latency": "N/A",
         "services": {},
-        "last_updated": "09:14:25 28/05/2026"
+        "last_updated": "15:09:44 28/05/2026"
     },
     {
         "id": "1779934465919",
@@ -664,12 +664,12 @@
         "router": "RACOM - M!DGE3-W-N",
         "ip_device": "10.28.0.182/30",
         "ip_sim": "172.16.1.160",
-        "lat": null,
-        "lng": null,
+        "lat": 20.391106676055777,
+        "lng": 106.51131041686294,
         "status": "Chưa quét",
         "latency": "N/A",
         "services": {},
-        "last_updated": "09:14:25 28/05/2026"
+        "last_updated": "15:10:00 28/05/2026"
     },
     {
         "id": "1779934465920",
@@ -678,12 +678,12 @@
         "router": "RACOM - M!DGE3-W-N",
         "ip_device": "10.28.0.206/30",
         "ip_sim": "172.16.1.125",
-        "lat": null,
-        "lng": null,
+        "lat": 20.361115201947143,
+        "lng": 106.50447145433554,
         "status": "Chưa quét",
         "latency": "N/A",
         "services": {},
-        "last_updated": "09:14:25 28/05/2026"
+        "last_updated": "15:10:27 28/05/2026"
     },
     {
         "id": "1779934465921",
@@ -692,12 +692,12 @@
         "router": "RACOM - M!DGE3-W-N",
         "ip_device": "10.28.0.210/30",
         "ip_sim": "172.16.1.126",
-        "lat": null,
-        "lng": null,
+        "lat": 20.390275753430554,
+        "lng": 106.57764211630217,
         "status": "Chưa quét",
         "latency": "N/A",
         "services": {},
-        "last_updated": "09:14:25 28/05/2026"
+        "last_updated": "15:10:48 28/05/2026"
     },
     {
         "id": "1779934465922",
@@ -706,12 +706,12 @@
         "router": "RACOM - M!DGE3-W-N",
         "ip_device": "10.28.0.194/30",
         "ip_sim": "172.16.1.163",
-        "lat": null,
-        "lng": null,
+        "lat": 20.36290182921568,
+        "lng": 106.5351465377566,
         "status": "Chưa quét",
         "latency": "N/A",
         "services": {},
-        "last_updated": "09:14:25 28/05/2026"
+        "last_updated": "15:11:05 28/05/2026"
     },
     {
         "id": "1779934465923",
@@ -720,12 +720,12 @@
         "router": "RACOM - M!DGE3-W-N",
         "ip_device": "10.28.0.198/30",
         "ip_sim": "172.16.1.164",
-        "lat": null,
-        "lng": null,
+        "lat": 20.37449680158252,
+        "lng": 106.55443698494601,
         "status": "Chưa quét",
         "latency": "N/A",
         "services": {},
-        "last_updated": "09:14:25 28/05/2026"
+        "last_updated": "15:11:28 28/05/2026"
     },
     {
         "id": "1779934465924",
@@ -734,12 +734,12 @@
         "router": "RACOM - M!DGE3-W-N",
         "ip_device": "10.28.0.202/30",
         "ip_sim": "172.16.1.165",
-        "lat": null,
-        "lng": null,
+        "lat": 20.367833492111323,
+        "lng": 106.55633598892565,
         "status": "Chưa quét",
         "latency": "N/A",
         "services": {},
-        "last_updated": "09:14:25 28/05/2026"
+        "last_updated": "15:11:49 28/05/2026"
     },
     {
         "id": "1779934465925",
@@ -748,12 +748,12 @@
         "router": "EW50-EUS",
         "ip_device": "10.28.0.226/30",
         "ip_sim": "172.16.1.197",
-        "lat": null,
-        "lng": null,
+        "lat": 20.40107488892488,
+        "lng": 106.47442500461112,
         "status": "Chưa quét",
         "latency": "N/A",
         "services": {},
-        "last_updated": "09:14:25 28/05/2026"
+        "last_updated": "15:12:26 28/05/2026"
     },
     {
         "id": "1779934465926",
@@ -762,12 +762,12 @@
         "router": "N/A",
         "ip_device": "10.28.1.10",
         "ip_sim": "172.16.1.211",
-        "lat": null,
-        "lng": null,
+        "lat": 20.388063923321198,
+        "lng": 106.50849911738776,
         "status": "Chưa quét",
         "latency": "N/A",
         "services": {},
-        "last_updated": "09:14:25 28/05/2026"
+        "last_updated": "15:13:24 28/05/2026"
     },
     {
         "id": "1779934465927",
@@ -776,12 +776,12 @@
         "router": "ABB_ARG600",
         "ip_device": "10.28.0.218/30",
         "ip_sim": "172.16.0.50",
-        "lat": null,
-        "lng": null,
+        "lat": 20.39468613360712,
+        "lng": 106.4749185310782,
         "status": "Chưa quét",
         "latency": "N/A",
         "services": {},
-        "last_updated": "09:14:25 28/05/2026"
+        "last_updated": "15:14:26 28/05/2026"
     },
     {
         "id": "1779934465928",
@@ -790,12 +790,12 @@
         "router": "EW50",
         "ip_device": "10.28.0.230/30",
         "ip_sim": "172.16.2.25",
-        "lat": null,
-        "lng": null,
+        "lat": 20.36797116150569,
+        "lng": 106.50431186290301,
         "status": "Chưa quét",
         "latency": "N/A",
         "services": {},
-        "last_updated": "09:14:25 28/05/2026"
+        "last_updated": "15:14:53 28/05/2026"
     },
     {
         "id": "1779934465929",
@@ -804,12 +804,12 @@
         "router": "EW50",
         "ip_device": "10.28.0.234/30",
         "ip_sim": "172.16.2.26",
-        "lat": null,
-        "lng": null,
+        "lat": 20.390956456652802,
+        "lng": 106.55924082130264,
         "status": "Chưa quét",
         "latency": "N/A",
         "services": {},
-        "last_updated": "09:14:25 28/05/2026"
+        "last_updated": "15:15:11 28/05/2026"
     },
     {
         "id": "1779934465930",
@@ -818,12 +818,12 @@
         "router": "EW50",
         "ip_device": "10.28.0.238/30",
         "ip_sim": "172.16.2.27",
-        "lat": null,
-        "lng": null,
+        "lat": 20.409360073624082,
+        "lng": 106.50369763710552,
         "status": "Chưa quét",
         "latency": "N/A",
         "services": {},
-        "last_updated": "09:14:25 28/05/2026"
+        "last_updated": "15:15:33 28/05/2026"
     },
     {
         "id": "1779934465931",
@@ -832,12 +832,12 @@
         "router": "EW50",
         "ip_device": "10.28.0.242/30",
         "ip_sim": "172.16.2.28",
-        "lat": null,
-        "lng": null,
+        "lat": 20.367743283993075,
+        "lng": 106.53797358612702,
         "status": "Chưa quét",
         "latency": "N/A",
         "services": {},
-        "last_updated": "09:14:25 28/05/2026"
+        "last_updated": "15:15:51 28/05/2026"
     },
     {
         "id": "1779934465932",
@@ -846,12 +846,12 @@
         "router": "EW50",
         "ip_device": "10.28.0.246/30",
         "ip_sim": "172.16.2.29",
-        "lat": null,
-        "lng": null,
+        "lat": 20.37951829514585,
+        "lng": 106.50820777158863,
         "status": "Chưa quét",
         "latency": "N/A",
         "services": {},
-        "last_updated": "09:14:25 28/05/2026"
+        "last_updated": "15:16:08 28/05/2026"
     },
     {
         "id": "1779934465933",
@@ -860,12 +860,12 @@
         "router": "EW50",
         "ip_device": "10.28.0.250/30",
         "ip_sim": "172.16.2.30",
-        "lat": null,
-        "lng": null,
+        "lat": 20.380353047212207,
+        "lng": 106.50447145443434,
         "status": "Chưa quét",
         "latency": "N/A",
         "services": {},
-        "last_updated": "09:14:25 28/05/2026"
+        "last_updated": "15:16:31 28/05/2026"
     },
     {
         "id": "1779934465934",
@@ -874,12 +874,12 @@
         "router": "EW50",
         "ip_device": "10.28.0.254/30",
         "ip_sim": "172.16.2.31",
-        "lat": null,
-        "lng": null,
+        "lat": 20.385187040279046,
+        "lng": 106.51694238515188,
         "status": "Chưa quét",
         "latency": "N/A",
         "services": {},
-        "last_updated": "09:14:25 28/05/2026"
+        "last_updated": "15:17:08 28/05/2026"
     },
     {
         "id": "1779934465935",
@@ -888,11 +888,11 @@
         "router": "Robustel/TQ",
         "ip_device": "10.28.1.6/30",
         "ip_sim": "172.16.2.33",
-        "lat": null,
-        "lng": null,
+        "lat": 20.391638413912823,
+        "lng": 106.57742217515954,
         "status": "Chưa quét",
         "latency": "N/A",
         "services": {},
-        "last_updated": "09:14:25 28/05/2026"
+        "last_updated": "15:17:24 28/05/2026"
     }
 ]
