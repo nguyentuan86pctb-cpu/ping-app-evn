@@ -6,12 +6,12 @@
         "router": "EW50-EUS",
         "ip_device": "10.28.0.26/30",
         "ip_sim": "172.16.0.159",
-        "lat": null,
-        "lng": null,
+        "lat": 20.42695186,
+        "lng": 106.51942382,
         "status": "Chưa quét",
         "latency": "N/A",
         "services": {},
-        "last_updated": "09:14:25 28/05/2026"
+        "last_updated": "10:05:57 28/05/2026"
     },
     {
         "id": "1779934465873",
