@@ -8,10 +8,10 @@
         "ip_sim": "172.16.0.159",
         "lat": null,
         "lng": null,
-        "status": "Chưa quét",
-        "latency": "N/A",
+        "status": "Online",
+        "latency": "67 ms",
         "services": {},
-        "last_updated": "16:15:07 29/05/2026"
+        "last_updated": "16:16:32 29/05/2026"
     },
     {
         "id": "1780046107865",
@@ -22,10 +22,10 @@
         "ip_sim": "172.16.0.139",
         "lat": null,
         "lng": null,
-        "status": "Chưa quét",
-        "latency": "N/A",
+        "status": "Online",
+        "latency": "87 ms",
         "services": {},
-        "last_updated": "16:15:07 29/05/2026"
+        "last_updated": "16:16:33 29/05/2026"
     },
     {
         "id": "1780046107866",
@@ -36,10 +36,10 @@
         "ip_sim": "172.16.0.189",
         "lat": null,
         "lng": null,
-        "status": "Chưa quét",
-        "latency": "N/A",
+        "status": "Online",
+        "latency": "110 ms",
         "services": {},
-        "last_updated": "16:15:07 29/05/2026"
+        "last_updated": "16:16:33 29/05/2026"
     },
     {
         "id": "1780046107867",
@@ -50,10 +50,10 @@
         "ip_sim": "172.16.0.185",
         "lat": null,
         "lng": null,
-        "status": "Chưa quét",
-        "latency": "N/A",
+        "status": "Online",
+        "latency": "61 ms",
         "services": {},
-        "last_updated": "16:15:07 29/05/2026"
+        "last_updated": "16:16:34 29/05/2026"
     },
     {
         "id": "1780046107868",
@@ -64,10 +64,10 @@
         "ip_sim": "172.16.0.181",
         "lat": null,
         "lng": null,
-        "status": "Chưa quét",
-        "latency": "N/A",
+        "status": "Online",
+        "latency": "103 ms",
         "services": {},
-        "last_updated": "16:15:07 29/05/2026"
+        "last_updated": "16:16:35 29/05/2026"
     },
     {
         "id": "1780046107869",
@@ -78,10 +78,10 @@
         "ip_sim": "172.16.1.69",
         "lat": null,
         "lng": null,
-        "status": "Chưa quét",
-        "latency": "N/A",
+        "status": "Online",
+        "latency": "47 ms",
         "services": {},
-        "last_updated": "16:15:07 29/05/2026"
+        "last_updated": "16:16:35 29/05/2026"
     },
     {
         "id": "1780046107870",
@@ -92,10 +92,10 @@
         "ip_sim": "172.16.0.161",
         "lat": null,
         "lng": null,
-        "status": "Chưa quét",
-        "latency": "N/A",
+        "status": "Online",
+        "latency": "1305 ms",
         "services": {},
-        "last_updated": "16:15:07 29/05/2026"
+        "last_updated": "16:16:37 29/05/2026"
     },
     {
         "id": "1780046107871",
@@ -106,10 +106,10 @@
         "ip_sim": "172.16.0.164",
         "lat": null,
         "lng": null,
-        "status": "Chưa quét",
-        "latency": "N/A",
+        "status": "Online",
+        "latency": "84 ms",
         "services": {},
-        "last_updated": "16:15:07 29/05/2026"
+        "last_updated": "16:16:38 29/05/2026"
     },
     {
         "id": "1780046107872",
@@ -120,10 +120,10 @@
         "ip_sim": "172.16.0.166",
         "lat": null,
         "lng": null,
-        "status": "Chưa quét",
-        "latency": "N/A",
+        "status": "Online",
+        "latency": "77 ms",
         "services": {},
-        "last_updated": "16:15:07 29/05/2026"
+        "last_updated": "16:16:38 29/05/2026"
     },
     {
         "id": "1780046107873",
@@ -134,10 +134,10 @@
         "ip_sim": "172.16.0.171",
         "lat": null,
         "lng": null,
-        "status": "Chưa quét",
-        "latency": "N/A",
+        "status": "Online",
+        "latency": "95 ms",
         "services": {},
-        "last_updated": "16:15:07 29/05/2026"
+        "last_updated": "16:16:39 29/05/2026"
     },
     {
         "id": "1780046107874",
@@ -148,10 +148,10 @@
         "ip_sim": "172.16.0.179",
         "lat": null,
         "lng": null,
-        "status": "Chưa quét",
-        "latency": "N/A",
+        "status": "Online",
+        "latency": "42 ms",
         "services": {},
-        "last_updated": "16:15:07 29/05/2026"
+        "last_updated": "16:16:40 29/05/2026"
     },
     {
         "id": "1780046107875",
@@ -162,10 +162,10 @@
         "ip_sim": "172.16.1.66",
         "lat": null,
         "lng": null,
-        "status": "Chưa quét",
-        "latency": "N/A",
+        "status": "Online",
+        "latency": "101 ms",
         "services": {},
-        "last_updated": "16:15:07 29/05/2026"
+        "last_updated": "16:16:40 29/05/2026"
     },
     {
         "id": "1780046107876",
@@ -176,10 +176,10 @@
         "ip_sim": "172.16.1.67",
         "lat": null,
         "lng": null,
-        "status": "Chưa quét",
-        "latency": "N/A",
+        "status": "Online",
+        "latency": "77 ms",
         "services": {},
-        "last_updated": "16:15:07 29/05/2026"
+        "last_updated": "16:16:41 29/05/2026"
     },
     {
         "id": "1780046107877",
@@ -190,10 +190,10 @@
         "ip_sim": "172.16.0.246",
         "lat": null,
         "lng": null,
-        "status": "Chưa quét",
-        "latency": "N/A",
+        "status": "Online",
+        "latency": "42 ms",
         "services": {},
-        "last_updated": "16:15:07 29/05/2026"
+        "last_updated": "16:16:41 29/05/2026"
     },
     {
         "id": "1780046107878",
@@ -204,10 +204,10 @@
         "ip_sim": "172.16.1.161",
         "lat": null,
         "lng": null,
-        "status": "Chưa quét",
-        "latency": "N/A",
+        "status": "Online",
+        "latency": "58 ms",
         "services": {},
-        "last_updated": "16:15:07 29/05/2026"
+        "last_updated": "16:16:42 29/05/2026"
     },
     {
         "id": "1780046107879",
@@ -218,10 +218,10 @@
         "ip_sim": "172.16.0.208",
         "lat": null,
         "lng": null,
-        "status": "Chưa quét",
-        "latency": "N/A",
+        "status": "Online",
+        "latency": "67 ms",
         "services": {},
-        "last_updated": "16:15:07 29/05/2026"
+        "last_updated": "16:16:43 29/05/2026"
     },
     {
         "id": "1780046107880",
@@ -232,10 +232,10 @@
         "ip_sim": "172.16.0.141",
         "lat": null,
         "lng": null,
-        "status": "Chưa quét",
-        "latency": "N/A",
+        "status": "Online",
+        "latency": "357 ms",
         "services": {},
-        "last_updated": "16:15:07 29/05/2026"
+        "last_updated": "16:16:44 29/05/2026"
     },
     {
         "id": "1780046107881",
@@ -246,10 +246,10 @@
         "ip_sim": "172.16.0.168",
         "lat": null,
         "lng": null,
-        "status": "Chưa quét",
-        "latency": "N/A",
+        "status": "Online",
+        "latency": "158 ms",
         "services": {},
-        "last_updated": "16:15:07 29/05/2026"
+        "last_updated": "16:17:49 29/05/2026"
     },
     {
         "id": "1780046107882",
@@ -260,10 +260,10 @@
         "ip_sim": "172.16.1.162",
         "lat": null,
         "lng": null,
-        "status": "Chưa quét",
-        "latency": "N/A",
+        "status": "Online",
+        "latency": "66 ms",
         "services": {},
-        "last_updated": "16:15:07 29/05/2026"
+        "last_updated": "16:16:47 29/05/2026"
     },
     {
         "id": "1780046107883",
@@ -274,10 +274,10 @@
         "ip_sim": "172.16.0.152",
         "lat": null,
         "lng": null,
-        "status": "Chưa quét",
-        "latency": "N/A",
+        "status": "Online",
+        "latency": "50 ms",
         "services": {},
-        "last_updated": "16:15:07 29/05/2026"
+        "last_updated": "16:16:47 29/05/2026"
     },
     {
         "id": "1780046107884",
@@ -288,10 +288,10 @@
         "ip_sim": "172.16.1.21",
         "lat": null,
         "lng": null,
-        "status": "Chưa quét",
-        "latency": "N/A",
+        "status": "Online",
+        "latency": "83 ms",
         "services": {},
-        "last_updated": "16:15:07 29/05/2026"
+        "last_updated": "16:16:48 29/05/2026"
     },
     {
         "id": "1780046107885",
@@ -302,10 +302,10 @@
         "ip_sim": "172.16.1.159",
         "lat": null,
         "lng": null,
-        "status": "Chưa quét",
-        "latency": "N/A",
+        "status": "Online",
+        "latency": "66 ms",
         "services": {},
-        "last_updated": "16:15:07 29/05/2026"
+        "last_updated": "16:16:49 29/05/2026"
     },
     {
         "id": "1780046107886",
@@ -316,10 +316,10 @@
         "ip_sim": "172.16.0.14",
         "lat": null,
         "lng": null,
-        "status": "Chưa quét",
-        "latency": "N/A",
+        "status": "Online",
+        "latency": "72 ms",
         "services": {},
-        "last_updated": "16:15:07 29/05/2026"
+        "last_updated": "16:16:49 29/05/2026"
     },
     {
         "id": "1780046107887",
@@ -330,10 +330,10 @@
         "ip_sim": "172.16.2.32",
         "lat": null,
         "lng": null,
-        "status": "Chưa quét",
-        "latency": "N/A",
+        "status": "Online",
+        "latency": "82 ms",
         "services": {},
-        "last_updated": "16:15:07 29/05/2026"
+        "last_updated": "16:16:50 29/05/2026"
     },
     {
         "id": "1780046107888",
@@ -344,10 +344,10 @@
         "ip_sim": "172.16.1.57",
         "lat": null,
         "lng": null,
-        "status": "Chưa quét",
-        "latency": "N/A",
+        "status": "Online",
+        "latency": "60 ms",
         "services": {},
-        "last_updated": "16:15:07 29/05/2026"
+        "last_updated": "16:16:50 29/05/2026"
     },
     {
         "id": "1780046107889",
@@ -358,10 +358,10 @@
         "ip_sim": "172.16.0.254",
         "lat": null,
         "lng": null,
-        "status": "Chưa quét",
-        "latency": "N/A",
+        "status": "Offline",
+        "latency": "Không phản hồi",
         "services": {},
-        "last_updated": "16:15:07 29/05/2026"
+        "last_updated": "16:17:53 29/05/2026"
     },
     {
         "id": "1780046107890",
@@ -372,10 +372,10 @@
         "ip_sim": "172.16.0.175",
         "lat": null,
         "lng": null,
-        "status": "Chưa quét",
-        "latency": "N/A",
+        "status": "Online",
+        "latency": "63 ms",
         "services": {},
-        "last_updated": "16:15:07 29/05/2026"
+        "last_updated": "16:16:53 29/05/2026"
     },
     {
         "id": "1780046107891",
@@ -386,10 +386,10 @@
         "ip_sim": "172.16.1.63",
         "lat": null,
         "lng": null,
-        "status": "Chưa quét",
-        "latency": "N/A",
+        "status": "Online",
+        "latency": "95 ms",
         "services": {},
-        "last_updated": "16:15:07 29/05/2026"
+        "last_updated": "16:16:54 29/05/2026"
     },
     {
         "id": "1780046107892",
@@ -400,10 +400,10 @@
         "ip_sim": "172.16.1.64",
         "lat": null,
         "lng": null,
-        "status": "Chưa quét",
-        "latency": "N/A",
+        "status": "Online",
+        "latency": "66 ms",
         "services": {},
-        "last_updated": "16:15:07 29/05/2026"
+        "last_updated": "16:16:55 29/05/2026"
     },
     {
         "id": "1780046107893",
@@ -414,10 +414,10 @@
         "ip_sim": "172.16.0.135",
         "lat": null,
         "lng": null,
-        "status": "Chưa quét",
-        "latency": "N/A",
+        "status": "Online",
+        "latency": "57 ms",
         "services": {},
-        "last_updated": "16:15:07 29/05/2026"
+        "last_updated": "16:16:55 29/05/2026"
     },
     {
         "id": "1780046107894",
@@ -428,10 +428,10 @@
         "ip_sim": "172.16.1.61",
         "lat": null,
         "lng": null,
-        "status": "Chưa quét",
-        "latency": "N/A",
+        "status": "Online",
+        "latency": "49 ms",
         "services": {},
-        "last_updated": "16:15:07 29/05/2026"
+        "last_updated": "16:16:56 29/05/2026"
     },
     {
         "id": "1780046107895",
@@ -442,10 +442,10 @@
         "ip_sim": "172.16.1.62",
         "lat": null,
         "lng": null,
-        "status": "Chưa quét",
-        "latency": "N/A",
+        "status": "Online",
+        "latency": "41 ms",
         "services": {},
-        "last_updated": "16:15:07 29/05/2026"
+        "last_updated": "16:16:56 29/05/2026"
     },
     {
         "id": "1780046107896",
@@ -456,10 +456,10 @@
         "ip_sim": "172.16.0.20",
         "lat": null,
         "lng": null,
-        "status": "Chưa quét",
-        "latency": "N/A",
+        "status": "Online",
+        "latency": "48 ms",
         "services": {},
-        "last_updated": "16:15:07 29/05/2026"
+        "last_updated": "16:16:57 29/05/2026"
     },
     {
         "id": "1780046107897",
@@ -470,10 +470,10 @@
         "ip_sim": "172.16.0.68",
         "lat": null,
         "lng": null,
-        "status": "Chưa quét",
-        "latency": "N/A",
+        "status": "Online",
+        "latency": "375 ms",
         "services": {},
-        "last_updated": "16:15:07 29/05/2026"
+        "last_updated": "16:16:58 29/05/2026"
     },
     {
         "id": "1780046107898",
@@ -484,10 +484,10 @@
         "ip_sim": "172.16.1.58",
         "lat": null,
         "lng": null,
-        "status": "Chưa quét",
-        "latency": "N/A",
+        "status": "Online",
+        "latency": "44 ms",
         "services": {},
-        "last_updated": "16:15:07 29/05/2026"
+        "last_updated": "16:16:59 29/05/2026"
     },
     {
         "id": "1780046107899",
@@ -498,10 +498,10 @@
         "ip_sim": "172.16.1.59",
         "lat": null,
         "lng": null,
-        "status": "Chưa quét",
-        "latency": "N/A",
+        "status": "Online",
+        "latency": "40 ms",
         "services": {},
-        "last_updated": "16:15:07 29/05/2026"
+        "last_updated": "16:16:59 29/05/2026"
     },
     {
         "id": "1780046107900",
@@ -512,10 +512,10 @@
         "ip_sim": "172.16.0.201",
         "lat": null,
         "lng": null,
-        "status": "Chưa quét",
-        "latency": "N/A",
+        "status": "Offline",
+        "latency": "Không phản hồi",
         "services": {},
-        "last_updated": "16:15:07 29/05/2026"
+        "last_updated": "16:18:05 29/05/2026"
     },
     {
         "id": "1780046107901",
@@ -526,10 +526,10 @@
         "ip_sim": "172.16.0.253",
         "lat": null,
         "lng": null,
-        "status": "Chưa quét",
-        "latency": "N/A",
+        "status": "Online",
+        "latency": "100 ms",
         "services": {},
-        "last_updated": "16:15:07 29/05/2026"
+        "last_updated": "16:17:02 29/05/2026"
     },
     {
         "id": "1780046107902",
@@ -540,10 +540,10 @@
         "ip_sim": "172.16.0.8",
         "lat": null,
         "lng": null,
-        "status": "Chưa quét",
-        "latency": "N/A",
+        "status": "Online",
+        "latency": "55 ms",
         "services": {},
-        "last_updated": "16:15:07 29/05/2026"
+        "last_updated": "16:17:03 29/05/2026"
     },
     {
         "id": "1780046107903",
@@ -554,10 +554,10 @@
         "ip_sim": "172.16.1.19",
         "lat": null,
         "lng": null,
-        "status": "Chưa quét",
-        "latency": "N/A",
+        "status": "Online",
+        "latency": "79 ms",
         "services": {},
-        "last_updated": "16:15:07 29/05/2026"
+        "last_updated": "16:17:04 29/05/2026"
     },
     {
         "id": "1780046107904",
@@ -568,10 +568,10 @@
         "ip_sim": "172.16.1.20",
         "lat": null,
         "lng": null,
-        "status": "Chưa quét",
-        "latency": "N/A",
+        "status": "Online",
+        "latency": "72 ms",
         "services": {},
-        "last_updated": "16:15:07 29/05/2026"
+        "last_updated": "16:17:04 29/05/2026"
     },
     {
         "id": "1780046107905",
@@ -582,10 +582,10 @@
         "ip_sim": "172.16.0.177",
         "lat": null,
         "lng": null,
-        "status": "Chưa quét",
-        "latency": "N/A",
+        "status": "Online",
+        "latency": "57 ms",
         "services": {},
-        "last_updated": "16:15:07 29/05/2026"
+        "last_updated": "16:17:05 29/05/2026"
     },
     {
         "id": "1780046107906",
@@ -596,10 +596,10 @@
         "ip_sim": "172.16.0.204",
         "lat": null,
         "lng": null,
-        "status": "Chưa quét",
-        "latency": "N/A",
+        "status": "Online",
+        "latency": "107 ms",
         "services": {},
-        "last_updated": "16:15:07 29/05/2026"
+        "last_updated": "16:17:05 29/05/2026"
     },
     {
         "id": "1780046107907",
@@ -610,10 +610,10 @@
         "ip_sim": "172.16.1.60",
         "lat": null,
         "lng": null,
-        "status": "Chưa quét",
-        "latency": "N/A",
+        "status": "Online",
+        "latency": "49 ms",
         "services": {},
-        "last_updated": "16:15:07 29/05/2026"
+        "last_updated": "16:17:06 29/05/2026"
     },
     {
         "id": "1780046107908",
@@ -624,10 +624,10 @@
         "ip_sim": "172.16.1.65",
         "lat": null,
         "lng": null,
-        "status": "Chưa quét",
-        "latency": "N/A",
+        "status": "Online",
+        "latency": "47 ms",
         "services": {},
-        "last_updated": "16:15:07 29/05/2026"
+        "last_updated": "16:17:07 29/05/2026"
     },
     {
         "id": "1780046107909",
@@ -638,10 +638,10 @@
         "ip_sim": "172.16.1.140",
         "lat": null,
         "lng": null,
-        "status": "Chưa quét",
-        "latency": "N/A",
+        "status": "Online",
+        "latency": "55 ms",
         "services": {},
-        "last_updated": "16:15:07 29/05/2026"
+        "last_updated": "16:17:07 29/05/2026"
     },
     {
         "id": "1780046107910",
@@ -652,10 +652,10 @@
         "ip_sim": "172.16.1.158",
         "lat": null,
         "lng": null,
-        "status": "Chưa quét",
-        "latency": "N/A",
+        "status": "Online",
+        "latency": "63 ms",
         "services": {},
-        "last_updated": "16:15:07 29/05/2026"
+        "last_updated": "16:17:08 29/05/2026"
     },
     {
         "id": "1780046107911",
@@ -666,10 +666,10 @@
         "ip_sim": "172.16.1.160",
         "lat": null,
         "lng": null,
-        "status": "Chưa quét",
-        "latency": "N/A",
+        "status": "Online",
+        "latency": "76 ms",
         "services": {},
-        "last_updated": "16:15:07 29/05/2026"
+        "last_updated": "16:17:08 29/05/2026"
     },
     {
         "id": "1780046107912",
@@ -680,10 +680,10 @@
         "ip_sim": "172.16.1.125",
         "lat": null,
         "lng": null,
-        "status": "Chưa quét",
-        "latency": "N/A",
+        "status": "Online",
+        "latency": "77 ms",
         "services": {},
-        "last_updated": "16:15:07 29/05/2026"
+        "last_updated": "16:17:09 29/05/2026"
     },
     {
         "id": "1780046107913",
@@ -694,10 +694,10 @@
         "ip_sim": "172.16.1.126",
         "lat": null,
         "lng": null,
-        "status": "Chưa quét",
-        "latency": "N/A",
+        "status": "Online",
+        "latency": "63 ms",
         "services": {},
-        "last_updated": "16:15:07 29/05/2026"
+        "last_updated": "16:17:10 29/05/2026"
     },
     {
         "id": "1780046107914",
@@ -708,10 +708,10 @@
         "ip_sim": "172.16.1.163",
         "lat": null,
         "lng": null,
-        "status": "Chưa quét",
-        "latency": "N/A",
+        "status": "Online",
+        "latency": "58 ms",
         "services": {},
-        "last_updated": "16:15:07 29/05/2026"
+        "last_updated": "16:17:10 29/05/2026"
     },
     {
         "id": "1780046107915",
@@ -722,10 +722,10 @@
         "ip_sim": "172.16.1.164",
         "lat": null,
         "lng": null,
-        "status": "Chưa quét",
-        "latency": "N/A",
+        "status": "Online",
+        "latency": "59 ms",
         "services": {},
-        "last_updated": "16:15:07 29/05/2026"
+        "last_updated": "16:17:11 29/05/2026"
     },
     {
         "id": "1780046107916",
@@ -736,10 +736,10 @@
         "ip_sim": "172.16.1.165",
         "lat": null,
         "lng": null,
-        "status": "Chưa quét",
-        "latency": "N/A",
+        "status": "Online",
+        "latency": "66 ms",
         "services": {},
-        "last_updated": "16:15:07 29/05/2026"
+        "last_updated": "16:17:11 29/05/2026"
     },
     {
         "id": "1780046107917",
@@ -750,10 +750,10 @@
         "ip_sim": "172.16.1.197",
         "lat": null,
         "lng": null,
-        "status": "Chưa quét",
-        "latency": "N/A",
+        "status": "Online",
+        "latency": "54 ms",
         "services": {},
-        "last_updated": "16:15:07 29/05/2026"
+        "last_updated": "16:17:12 29/05/2026"
     },
     {
         "id": "1780046107918",
@@ -764,10 +764,10 @@
         "ip_sim": "172.16.1.211",
         "lat": null,
         "lng": null,
-        "status": "Chưa quét",
-        "latency": "N/A",
+        "status": "Offline",
+        "latency": "Không phản hồi",
         "services": {},
-        "last_updated": "16:15:07 29/05/2026"
+        "last_updated": "16:17:15 29/05/2026"
     },
     {
         "id": "1780046107919",
@@ -778,10 +778,10 @@
         "ip_sim": "172.16.0.50",
         "lat": null,
         "lng": null,
-        "status": "Chưa quét",
-        "latency": "N/A",
+        "status": "Offline",
+        "latency": "Không phản hồi",
         "services": {},
-        "last_updated": "16:15:07 29/05/2026"
+        "last_updated": "16:17:17 29/05/2026"
     },
     {
         "id": "1780046107920",
@@ -792,10 +792,10 @@
         "ip_sim": "172.16.2.25",
         "lat": null,
         "lng": null,
-        "status": "Chưa quét",
-        "latency": "N/A",
+        "status": "Online",
+        "latency": "56 ms",
         "services": {},
-        "last_updated": "16:15:07 29/05/2026"
+        "last_updated": "16:17:18 29/05/2026"
     },
     {
         "id": "1780046107921",
@@ -806,10 +806,10 @@
         "ip_sim": "172.16.2.26",
         "lat": null,
         "lng": null,
-        "status": "Chưa quét",
-        "latency": "N/A",
+        "status": "Online",
+        "latency": "57 ms",
         "services": {},
-        "last_updated": "16:15:07 29/05/2026"
+        "last_updated": "16:17:18 29/05/2026"
     },
     {
         "id": "1780046107922",
@@ -820,10 +820,10 @@
         "ip_sim": "172.16.2.27",
         "lat": null,
         "lng": null,
-        "status": "Chưa quét",
-        "latency": "N/A",
+        "status": "Online",
+        "latency": "68 ms",
         "services": {},
-        "last_updated": "16:15:07 29/05/2026"
+        "last_updated": "16:17:19 29/05/2026"
     },
     {
         "id": "1780046107923",
@@ -834,10 +834,10 @@
         "ip_sim": "172.16.2.28",
         "lat": null,
         "lng": null,
-        "status": "Chưa quét",
-        "latency": "N/A",
+        "status": "Online",
+        "latency": "50 ms",
         "services": {},
-        "last_updated": "16:15:07 29/05/2026"
+        "last_updated": "16:17:20 29/05/2026"
     },
     {
         "id": "1780046107924",
@@ -848,10 +848,10 @@
         "ip_sim": "172.16.2.29",
         "lat": null,
         "lng": null,
-        "status": "Chưa quét",
-        "latency": "N/A",
+        "status": "Online",
+        "latency": "40 ms",
         "services": {},
-        "last_updated": "16:15:07 29/05/2026"
+        "last_updated": "16:17:20 29/05/2026"
     },
     {
         "id": "1780046107925",
@@ -862,10 +862,10 @@
         "ip_sim": "172.16.2.30",
         "lat": null,
         "lng": null,
-        "status": "Chưa quét",
-        "latency": "N/A",
+        "status": "Online",
+        "latency": "48 ms",
         "services": {},
-        "last_updated": "16:15:07 29/05/2026"
+        "last_updated": "16:17:21 29/05/2026"
     },
     {
         "id": "1780046107926",
@@ -876,10 +876,10 @@
         "ip_sim": "172.16.2.31",
         "lat": null,
         "lng": null,
-        "status": "Chưa quét",
-        "latency": "N/A",
+        "status": "Online",
+        "latency": "91 ms",
         "services": {},
-        "last_updated": "16:15:07 29/05/2026"
+        "last_updated": "16:17:22 29/05/2026"
     },
     {
         "id": "1780046107927",
@@ -890,9 +890,9 @@
         "ip_sim": "172.16.2.33",
         "lat": null,
         "lng": null,
-        "status": "Chưa quét",
-        "latency": "N/A",
+        "status": "Online",
+        "latency": "93 ms",
         "services": {},
-        "last_updated": "16:15:07 29/05/2026"
+        "last_updated": "16:17:22 29/05/2026"
     }
 ]
