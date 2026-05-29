@@ -9,9 +9,9 @@
         "lat": 20.42695186,
         "lng": 106.51942382,
         "status": "Online",
-        "latency": "82 ms",
+        "latency": "68 ms",
         "services": {},
-        "last_updated": "11:22:25 29/05/2026"
+        "last_updated": "11:26:08 29/05/2026"
     },
     {
         "id": "1779934465873",
@@ -23,9 +23,9 @@
         "lat": 20.448132954524272,
         "lng": 106.51385650374333,
         "status": "Online",
-        "latency": "87 ms",
+        "latency": "97 ms",
         "services": {},
-        "last_updated": "11:22:25 29/05/2026"
+        "last_updated": "11:26:08 29/05/2026"
     },
     {
         "id": "1779934465874",
@@ -37,9 +37,9 @@
         "lat": 20.413600223785064,
         "lng": 106.52580574489333,
         "status": "Online",
-        "latency": "58 ms",
+        "latency": "36 ms",
         "services": {},
-        "last_updated": "11:22:25 29/05/2026"
+        "last_updated": "11:26:08 29/05/2026"
     },
     {
         "id": "1779934465875",
@@ -51,9 +51,9 @@
         "lat": 20.42547981496681,
         "lng": 106.51952669359588,
         "status": "Online",
-        "latency": "49 ms",
+        "latency": "72 ms",
         "services": {},
-        "last_updated": "11:22:25 29/05/2026"
+        "last_updated": "11:26:08 29/05/2026"
     },
     {
         "id": "1779934465876",
@@ -65,9 +65,9 @@
         "lat": 20.438826293566535,
         "lng": 106.51347831227203,
         "status": "Online",
-        "latency": "72 ms",
+        "latency": "64 ms",
         "services": {},
-        "last_updated": "11:22:25 29/05/2026"
+        "last_updated": "11:26:08 29/05/2026"
     },
     {
         "id": "1779934465877",
@@ -79,9 +79,9 @@
         "lat": 20.38615375784619,
         "lng": 106.53702944853471,
         "status": "Online",
-        "latency": "36 ms",
+        "latency": "43 ms",
         "services": {},
-        "last_updated": "11:22:40 29/05/2026"
+        "last_updated": "11:26:08 29/05/2026"
     },
     {
         "id": "1779934465878",
@@ -92,10 +92,10 @@
         "ip_sim": "172.16.0.161",
         "lat": 20.397710528940028,
         "lng": 106.50993243197523,
-        "status": "Online",
-        "latency": "329 ms",
+        "status": "Offline",
+        "latency": "Không phản hồi",
         "services": {},
-        "last_updated": "11:22:44 29/05/2026"
+        "last_updated": "11:26:09 29/05/2026"
     },
     {
         "id": "1779934465879",
@@ -107,9 +107,9 @@
         "lat": 20.392293969989243,
         "lng": 106.4752568338205,
         "status": "Online",
-        "latency": "70 ms",
+        "latency": "84 ms",
         "services": {},
-        "last_updated": "11:22:25 29/05/2026"
+        "last_updated": "11:26:10 29/05/2026"
     },
     {
         "id": "1779934465880",
@@ -121,9 +121,9 @@
         "lat": 20.397963188101887,
         "lng": 106.48323506454895,
         "status": "Online",
-        "latency": "96 ms",
+        "latency": "81 ms",
         "services": {},
-        "last_updated": "11:22:25 29/05/2026"
+        "last_updated": "11:26:10 29/05/2026"
     },
     {
         "id": "1779934465881",
@@ -135,9 +135,9 @@
         "lat": 20.40128794293345,
         "lng": 106.49192810395506,
         "status": "Online",
-        "latency": "64 ms",
+        "latency": "42 ms",
         "services": {},
-        "last_updated": "11:22:25 29/05/2026"
+        "last_updated": "11:26:10 29/05/2026"
     },
     {
         "id": "1779934465882",
@@ -149,9 +149,9 @@
         "lat": 20.406785886674513,
         "lng": 106.49878651240326,
         "status": "Online",
-        "latency": "46 ms",
+        "latency": "42 ms",
         "services": {},
-        "last_updated": "11:22:25 29/05/2026"
+        "last_updated": "11:26:10 29/05/2026"
     },
     {
         "id": "1779934465883",
@@ -163,9 +163,9 @@
         "lat": 20.402454732594997,
         "lng": 106.5046679262278,
         "status": "Online",
-        "latency": "94 ms",
+        "latency": "61 ms",
         "services": {},
-        "last_updated": "11:22:25 29/05/2026"
+        "last_updated": "11:26:10 29/05/2026"
     },
     {
         "id": "1779934465884",
@@ -177,9 +177,9 @@
         "lat": 20.40564081214833,
         "lng": 106.50005519725813,
         "status": "Online",
-        "latency": "54 ms",
+        "latency": "84 ms",
         "services": {},
-        "last_updated": "11:22:25 29/05/2026"
+        "last_updated": "11:26:10 29/05/2026"
     },
     {
         "id": "1779934465885",
@@ -193,7 +193,7 @@
         "status": "Online",
         "latency": "63 ms",
         "services": {},
-        "last_updated": "11:22:25 29/05/2026"
+        "last_updated": "11:26:10 29/05/2026"
     },
     {
         "id": "1779934465886",
@@ -205,9 +205,9 @@
         "lat": 20.404815624185225,
         "lng": 106.50709197261997,
         "status": "Online",
-        "latency": "54 ms",
+        "latency": "87 ms",
         "services": {},
-        "last_updated": "11:22:25 29/05/2026"
+        "last_updated": "11:26:10 29/05/2026"
     },
     {
         "id": "1779934465887",
@@ -219,9 +219,9 @@
         "lat": 20.39744341839654,
         "lng": 106.51614408362911,
         "status": "Online",
-        "latency": "80 ms",
+        "latency": "45 ms",
         "services": {},
-        "last_updated": "11:22:25 29/05/2026"
+        "last_updated": "11:26:10 29/05/2026"
     },
     {
         "id": "1779934465888",
@@ -232,10 +232,10 @@
         "ip_sim": "172.16.0.141",
         "lat": 20.356372241175965,
         "lng": 106.54156506400037,
-        "status": "Online",
-        "latency": "948 ms",
+        "status": "Offline",
+        "latency": "Không phản hồi",
         "services": {},
-        "last_updated": "11:22:26 29/05/2026"
+        "last_updated": "11:26:11 29/05/2026"
     },
     {
         "id": "1779934465889",
@@ -247,9 +247,9 @@
         "lat": 20.385703398944273,
         "lng": 106.53157249430545,
         "status": "Online",
-        "latency": "798 ms",
+        "latency": "914 ms",
         "services": {},
-        "last_updated": "11:22:26 29/05/2026"
+        "last_updated": "11:26:12 29/05/2026"
     },
     {
         "id": "1779934465890",
@@ -261,9 +261,9 @@
         "lat": 20.36774328399307,
         "lng": 106.53797358612702,
         "status": "Online",
-        "latency": "40 ms",
+        "latency": "46 ms",
         "services": {},
-        "last_updated": "11:22:25 29/05/2026"
+        "last_updated": "11:26:12 29/05/2026"
     },
     {
         "id": "1779934465891",
@@ -275,9 +275,9 @@
         "lat": 20.39939994352547,
         "lng": 106.51093222525691,
         "status": "Online",
-        "latency": "74 ms",
+        "latency": "50 ms",
         "services": {},
-        "last_updated": "11:22:25 29/05/2026"
+        "last_updated": "11:26:12 29/05/2026"
     },
     {
         "id": "1779934465892",
@@ -289,9 +289,9 @@
         "lat": 20.424268897780827,
         "lng": 106.53229333784721,
         "status": "Online",
-        "latency": "66 ms",
+        "latency": "47 ms",
         "services": {},
-        "last_updated": "11:22:26 29/05/2026"
+        "last_updated": "11:26:12 29/05/2026"
     },
     {
         "id": "1779934465893",
@@ -303,9 +303,9 @@
         "lat": 20.434071586299346,
         "lng": 106.56229921013123,
         "status": "Online",
-        "latency": "78 ms",
+        "latency": "77 ms",
         "services": {},
-        "last_updated": "11:22:26 29/05/2026"
+        "last_updated": "11:26:13 29/05/2026"
     },
     {
         "id": "1779934465894",
@@ -317,9 +317,9 @@
         "lat": 20.403309157696896,
         "lng": 106.48848347691518,
         "status": "Online",
-        "latency": "55 ms",
+        "latency": "56 ms",
         "services": {},
-        "last_updated": "11:22:26 29/05/2026"
+        "last_updated": "11:26:13 29/05/2026"
     },
     {
         "id": "1779934465895",
@@ -331,9 +331,9 @@
         "lat": 20.39066984513941,
         "lng": 106.55331850379658,
         "status": "Online",
-        "latency": "90 ms",
+        "latency": "87 ms",
         "services": {},
-        "last_updated": "11:22:26 29/05/2026"
+        "last_updated": "11:26:13 29/05/2026"
     },
     {
         "id": "1779934465896",
@@ -345,9 +345,9 @@
         "lat": 20.3795563242545,
         "lng": 106.55452147451683,
         "status": "Online",
-        "latency": "81 ms",
+        "latency": "86 ms",
         "services": {},
-        "last_updated": "11:22:26 29/05/2026"
+        "last_updated": "11:26:13 29/05/2026"
     },
     {
         "id": "1779934465897",
@@ -361,7 +361,7 @@
         "status": "Offline",
         "latency": "Không phản hồi",
         "services": {},
-        "last_updated": "11:22:58 29/05/2026"
+        "last_updated": "11:26:14 29/05/2026"
     },
     {
         "id": "1779934465898",
@@ -373,9 +373,9 @@
         "lat": 20.37954438123217,
         "lng": 106.50815278620415,
         "status": "Online",
-        "latency": "48 ms",
+        "latency": "37 ms",
         "services": {},
-        "last_updated": "11:22:26 29/05/2026"
+        "last_updated": "11:26:14 29/05/2026"
     },
     {
         "id": "1779934465899",
@@ -387,9 +387,9 @@
         "lat": 20.358010872182824,
         "lng": 106.48363538416673,
         "status": "Online",
-        "latency": "86 ms",
+        "latency": "62 ms",
         "services": {},
-        "last_updated": "11:22:26 29/05/2026"
+        "last_updated": "11:26:14 29/05/2026"
     },
     {
         "id": "1779934465900",
@@ -401,9 +401,9 @@
         "lat": 20.396557216325466,
         "lng": 106.51071898968752,
         "status": "Online",
-        "latency": "42 ms",
+        "latency": "79 ms",
         "services": {},
-        "last_updated": "11:22:26 29/05/2026"
+        "last_updated": "11:26:14 29/05/2026"
     },
     {
         "id": "1779934465901",
@@ -415,9 +415,9 @@
         "lat": 20.338596394340424,
         "lng": 106.49704441756754,
         "status": "Online",
-        "latency": "69 ms",
+        "latency": "78 ms",
         "services": {},
-        "last_updated": "11:22:26 29/05/2026"
+        "last_updated": "11:26:14 29/05/2026"
     },
     {
         "id": "1779934465902",
@@ -429,9 +429,9 @@
         "lat": 20.337279793179054,
         "lng": 106.49584949345254,
         "status": "Online",
-        "latency": "88 ms",
+        "latency": "39 ms",
         "services": {},
-        "last_updated": "11:22:26 29/05/2026"
+        "last_updated": "11:26:14 29/05/2026"
     },
     {
         "id": "1779934465903",
@@ -443,9 +443,9 @@
         "lat": 20.325072719234363,
         "lng": 106.49095580311858,
         "status": "Online",
-        "latency": "50 ms",
+        "latency": "42 ms",
         "services": {},
-        "last_updated": "11:22:26 29/05/2026"
+        "last_updated": "11:26:14 29/05/2026"
     },
     {
         "id": "1779934465904",
@@ -457,9 +457,9 @@
         "lat": 20.361762715274143,
         "lng": 106.53562397095028,
         "status": "Online",
-        "latency": "79 ms",
+        "latency": "69 ms",
         "services": {},
-        "last_updated": "11:22:26 29/05/2026"
+        "last_updated": "11:26:15 29/05/2026"
     },
     {
         "id": "1779934465905",
@@ -470,10 +470,10 @@
         "ip_sim": "172.16.0.68",
         "lat": 20.35629585723629,
         "lng": 106.53298199507574,
-        "status": "Online",
-        "latency": "50 ms",
+        "status": "Offline",
+        "latency": "Không phản hồi",
         "services": {},
-        "last_updated": "11:22:26 29/05/2026"
+        "last_updated": "11:26:16 29/05/2026"
     },
     {
         "id": "1779934465906",
@@ -485,9 +485,9 @@
         "lat": 20.345384194465105,
         "lng": 106.54807478520856,
         "status": "Online",
-        "latency": "38 ms",
+        "latency": "74 ms",
         "services": {},
-        "last_updated": "11:22:26 29/05/2026"
+        "last_updated": "11:26:16 29/05/2026"
     },
     {
         "id": "1779934465907",
@@ -499,9 +499,9 @@
         "lat": 20.359338612595973,
         "lng": 106.5761226448797,
         "status": "Online",
-        "latency": "67 ms",
+        "latency": "51 ms",
         "services": {},
-        "last_updated": "11:22:26 29/05/2026"
+        "last_updated": "11:26:16 29/05/2026"
     },
     {
         "id": "1779934465908",
@@ -515,7 +515,7 @@
         "status": "Offline",
         "latency": "Không phản hồi",
         "services": {},
-        "last_updated": "11:22:27 29/05/2026"
+        "last_updated": "11:26:17 29/05/2026"
     },
     {
         "id": "1779934465909",
@@ -527,9 +527,9 @@
         "lat": 20.414012480563176,
         "lng": 106.57914147113962,
         "status": "Online",
-        "latency": "48 ms",
+        "latency": "87 ms",
         "services": {},
-        "last_updated": "11:22:26 29/05/2026"
+        "last_updated": "11:26:17 29/05/2026"
     },
     {
         "id": "1779934465910",
@@ -543,7 +543,7 @@
         "status": "Offline",
         "latency": "Không phản hồi",
         "services": {},
-        "last_updated": "11:23:08 29/05/2026"
+        "last_updated": "11:26:18 29/05/2026"
     },
     {
         "id": "1779934465911",
@@ -555,9 +555,9 @@
         "lat": 20.429517184099765,
         "lng": 106.5766805442697,
         "status": "Online",
-        "latency": "64 ms",
+        "latency": "99 ms",
         "services": {},
-        "last_updated": "11:22:26 29/05/2026"
+        "last_updated": "11:26:18 29/05/2026"
     },
     {
         "id": "1779934465912",
@@ -569,9 +569,9 @@
         "lat": 20.46170426279887,
         "lng": 106.5636342796322,
         "status": "Online",
-        "latency": "72 ms",
+        "latency": "88 ms",
         "services": {},
-        "last_updated": "11:22:26 29/05/2026"
+        "last_updated": "11:26:18 29/05/2026"
     },
     {
         "id": "1779934465913",
@@ -585,7 +585,7 @@
         "status": "Online",
         "latency": "49 ms",
         "services": {},
-        "last_updated": "11:22:26 29/05/2026"
+        "last_updated": "11:26:18 29/05/2026"
     },
     {
         "id": "1779934465914",
@@ -597,9 +597,9 @@
         "lat": 20.335305499180237,
         "lng": 106.55060075544104,
         "status": "Online",
-        "latency": "49 ms",
+        "latency": "59 ms",
         "services": {},
-        "last_updated": "11:22:27 29/05/2026"
+        "last_updated": "11:26:18 29/05/2026"
     },
     {
         "id": "1779934465915",
@@ -611,9 +611,9 @@
         "lat": 20.332006359902028,
         "lng": 106.55456237817143,
         "status": "Online",
-        "latency": "84 ms",
+        "latency": "46 ms",
         "services": {},
-        "last_updated": "11:22:27 29/05/2026"
+        "last_updated": "11:26:18 29/05/2026"
     },
     {
         "id": "1779934465916",
@@ -625,9 +625,9 @@
         "lat": 20.314818510504484,
         "lng": 106.56292617643795,
         "status": "Online",
-        "latency": "58 ms",
+        "latency": "66 ms",
         "services": {},
-        "last_updated": "11:22:27 29/05/2026"
+        "last_updated": "11:26:18 29/05/2026"
     },
     {
         "id": "1779934465917",
@@ -639,9 +639,9 @@
         "lat": 20.335904706363557,
         "lng": 106.52954206193084,
         "status": "Online",
-        "latency": "45 ms",
+        "latency": "55 ms",
         "services": {},
-        "last_updated": "11:22:27 29/05/2026"
+        "last_updated": "11:26:19 29/05/2026"
     },
     {
         "id": "1779934465918",
@@ -653,9 +653,9 @@
         "lat": 20.386100645099873,
         "lng": 106.53187826613177,
         "status": "Online",
-        "latency": "94 ms",
+        "latency": "45 ms",
         "services": {},
-        "last_updated": "11:22:27 29/05/2026"
+        "last_updated": "11:26:19 29/05/2026"
     },
     {
         "id": "1779934465919",
@@ -667,9 +667,9 @@
         "lat": 20.391106676055777,
         "lng": 106.51131041686294,
         "status": "Online",
-        "latency": "81 ms",
+        "latency": "75 ms",
         "services": {},
-        "last_updated": "11:22:27 29/05/2026"
+        "last_updated": "11:26:19 29/05/2026"
     },
     {
         "id": "1779934465920",
@@ -681,9 +681,9 @@
         "lat": 20.361115201947143,
         "lng": 106.50447145433554,
         "status": "Online",
-        "latency": "80 ms",
+        "latency": "58 ms",
         "services": {},
-        "last_updated": "11:22:27 29/05/2026"
+        "last_updated": "11:26:19 29/05/2026"
     },
     {
         "id": "1779934465921",
@@ -695,9 +695,9 @@
         "lat": 20.390275753430554,
         "lng": 106.57764211630217,
         "status": "Online",
-        "latency": "69 ms",
+        "latency": "49 ms",
         "services": {},
-        "last_updated": "11:22:27 29/05/2026"
+        "last_updated": "11:26:19 29/05/2026"
     },
     {
         "id": "1779934465922",
@@ -711,7 +711,7 @@
         "status": "Online",
         "latency": "49 ms",
         "services": {},
-        "last_updated": "11:22:27 29/05/2026"
+        "last_updated": "11:26:19 29/05/2026"
     },
     {
         "id": "1779934465923",
@@ -723,9 +723,9 @@
         "lat": 20.37449680158252,
         "lng": 106.55443698494601,
         "status": "Online",
-        "latency": "84 ms",
+        "latency": "52 ms",
         "services": {},
-        "last_updated": "11:22:27 29/05/2026"
+        "last_updated": "11:26:19 29/05/2026"
     },
     {
         "id": "1779934465924",
@@ -737,9 +737,9 @@
         "lat": 20.367833492111323,
         "lng": 106.55633598892565,
         "status": "Online",
-        "latency": "78 ms",
+        "latency": "71 ms",
         "services": {},
-        "last_updated": "11:22:27 29/05/2026"
+        "last_updated": "11:26:19 29/05/2026"
     },
     {
         "id": "1779934465925",
@@ -751,9 +751,9 @@
         "lat": 20.40107488892488,
         "lng": 106.47442500461112,
         "status": "Online",
-        "latency": "64 ms",
+        "latency": "52 ms",
         "services": {},
-        "last_updated": "11:22:27 29/05/2026"
+        "last_updated": "11:26:19 29/05/2026"
     },
     {
         "id": "1779934465926",
@@ -767,7 +767,7 @@
         "status": "Offline",
         "latency": "Không phản hồi",
         "services": {},
-        "last_updated": "11:22:28 29/05/2026"
+        "last_updated": "11:26:20 29/05/2026"
     },
     {
         "id": "1779934465927",
@@ -781,7 +781,7 @@
         "status": "Offline",
         "latency": "Không phản hồi",
         "services": {},
-        "last_updated": "11:22:28 29/05/2026"
+        "last_updated": "11:26:21 29/05/2026"
     },
     {
         "id": "1779934465928",
@@ -793,9 +793,9 @@
         "lat": 20.36797116150569,
         "lng": 106.50431186290301,
         "status": "Online",
-        "latency": "60 ms",
+        "latency": "43 ms",
         "services": {},
-        "last_updated": "11:22:27 29/05/2026"
+        "last_updated": "11:26:21 29/05/2026"
     },
     {
         "id": "1779934465929",
@@ -807,9 +807,9 @@
         "lat": 20.390956456652802,
         "lng": 106.55924082130264,
         "status": "Online",
-        "latency": "53 ms",
+        "latency": "78 ms",
         "services": {},
-        "last_updated": "11:22:27 29/05/2026"
+        "last_updated": "11:26:21 29/05/2026"
     },
     {
         "id": "1779934465930",
@@ -821,9 +821,9 @@
         "lat": 20.409360073624082,
         "lng": 106.50369763710552,
         "status": "Online",
-        "latency": "67 ms",
+        "latency": "58 ms",
         "services": {},
-        "last_updated": "11:22:27 29/05/2026"
+        "last_updated": "11:26:21 29/05/2026"
     },
     {
         "id": "1779934465931",
@@ -835,9 +835,9 @@
         "lat": 20.367743283993075,
         "lng": 106.53797358612702,
         "status": "Online",
-        "latency": "52 ms",
+        "latency": "60 ms",
         "services": {},
-        "last_updated": "11:22:27 29/05/2026"
+        "last_updated": "11:26:22 29/05/2026"
     },
     {
         "id": "1779934465932",
@@ -849,9 +849,9 @@
         "lat": 20.37951829514585,
         "lng": 106.50820777158863,
         "status": "Online",
-        "latency": "68 ms",
+        "latency": "77 ms",
         "services": {},
-        "last_updated": "11:22:27 29/05/2026"
+        "last_updated": "11:26:22 29/05/2026"
     },
     {
         "id": "1779934465933",
@@ -863,9 +863,9 @@
         "lat": 20.380353047212207,
         "lng": 106.50447145443434,
         "status": "Online",
-        "latency": "48 ms",
+        "latency": "46 ms",
         "services": {},
-        "last_updated": "11:22:27 29/05/2026"
+        "last_updated": "11:26:22 29/05/2026"
     },
     {
         "id": "1779934465934",
@@ -877,9 +877,9 @@
         "lat": 20.385187040279046,
         "lng": 106.51694238515188,
         "status": "Online",
-        "latency": "62 ms",
+        "latency": "55 ms",
         "services": {},
-        "last_updated": "11:22:27 29/05/2026"
+        "last_updated": "11:26:22 29/05/2026"
     },
     {
         "id": "1779934465935",
@@ -891,8 +891,8 @@
         "lat": 20.391638413912823,
         "lng": 106.57742217515954,
         "status": "Online",
-        "latency": "52 ms",
+        "latency": "79 ms",
         "services": {},
-        "last_updated": "11:22:27 29/05/2026"
+        "last_updated": "11:26:22 29/05/2026"
     }
 ]
